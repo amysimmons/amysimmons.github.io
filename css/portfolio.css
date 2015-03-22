@@ -73,8 +73,15 @@ nav ul {
   margin-left: 5px;
 }
 
-.nav-li:hover, .nav-link:hover {
-  color: #32415b
+
+.nav-li:hover .nav-link {
+  color: #32415b;
+  /*all .15s ease-in-out;*/
+}
+
+.nav-li:hover .nav-icon {
+  color: #32415b;
+  /*all .15s ease-in-out;*/
 }
 
 .name{
