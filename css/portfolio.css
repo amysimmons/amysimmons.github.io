@@ -1,11 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 /*font-family: 'Raleway', sans-serif;*/
-
 /*Michroma*/
-
 @import url(http://fonts.googleapis.com/css?family=Raleway+Dots);
 /*font-family: 'Raleway Dots', cursive;*/
-
 @font-face{
   font-family:'Perfograma';
   src: url("../fonts/perfograma/Perfograma.otf");
@@ -84,7 +81,7 @@ nav ul {
   /*all .15s ease-in-out;*/
 }
 
-.name{
+.name {
   font-family: 'Raleway Dots', cursive;
   font-size: 12em;
   font-weight: 100;
@@ -148,6 +145,47 @@ h3 {
   text-decoration: none;
   padding: 5px;
 }
+
+.left {
+  display: inline-block;
+  width: 60%;
+}
+
+.right {
+  display: inline-block;
+  width: 37%;
+}
+
+/*code flowers*/
+
+circle.node {
+  cursor: pointer;
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+circle.node.directory {
+  stroke: #9ecae1;
+  stroke-width: 2px;
+}
+
+circle.node.collapsed {
+  stroke: #555;
+}
+
+.nodetext {
+  fill: #252929;
+  font-weight: bold;
+  text-shadow: 0 0 0.2em white;
+}
+
+line.link {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 1.5px;
+}
+
+
 
 /*tablet*/
 @media screen and (max-width: 1023px){

@@ -6,19 +6,23 @@
   <link rel="stylesheet" href="css/portfolio.css">
   <!-- <link rel="stylesheet" type="text/html" href="fonts/perfograma"> -->
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="js/CodeFlower.js" charset="utf-8"></script>
+  <script src="js/dataConverter.js"></script>
   <script src="js/underscore.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/jquery.smooth-scroll.js"></script>
+  <script src="js/sammy.js"></script>
   <script src="js/portfolio.js"></script>
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li class="nav-li"><i class="fa fa-home nav-icon"></i><a href="" class="nav-link home-link">home</a></li>
-        <li class="nav-li"><i class="fa fa-laptop nav-icon"></i><a href="" class="nav-link projects-link">projects</a></li>
-        <li class="nav-li"><i class="fa fa-info nav-icon"></i><a href="" class="nav-link about-link">about</a></li>
-        <li class="nav-li"><i class="fa fa-envelope-o nav-icon"></i><a href="" class="nav-link contact-link">contact</a></li>
+        <li class="nav-li"><i class="fa fa-home nav-icon"></i><a href="#" class="nav-link home-link">home</a></li>
+        <li class="nav-li"><i class="fa fa-laptop nav-icon"></i><a href="#/projects" class="nav-link projects-link">projects</a></li>
+        <li class="nav-li"><i class="fa fa-info nav-icon"></i><a href="#/about" class="nav-link about-link">about</a></li>
+        <li class="nav-li"><i class="fa fa-envelope-o nav-icon"></i><a href="#/contact" class="nav-link contact-link">contact</a></li>
       </ul>
     </nav>
   </header>
@@ -29,45 +33,43 @@
     <div class="section" id="projects">
       <h2>Projects</h2>
       <div class="project">
-        <h3>Final project</h3>
-        <img class="project-image" src="" alt="">
-        <p claas="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="" class="project-link">Site</a>
-        <a href="" class="project-link">Code</a>
-      </div>
-      <div class="project">
-        <h3>Hangman</h3>
-        <img class="project-image" src="" alt="">
-        <p claas="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="" class="project-link">Site</a>
-        <a href="" class="project-link">Code</a>
-      </div>
-      <div class="project">
-        <h3>Burning Airlines</h3>
-        <img class="project-image" src="" alt="">
-        <p claas="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="" class="project-link">Site</a>
-        <a href="" class="project-link">Code</a>
+        <h3>Playa</h3>
+        <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="left">
+          <img class="project-image" src="project-images/playa.png" alt="Playa">
+          <a href="" class="project-link">Site</a>    
+        </div>
+        <div class="right">
+          <div id="playa-visualisation"></div>
+          <a href="" class="project-link">Code</a>
+        </div>
       </div>
       <div class="project">
         <h3>Sparkr</h3>
-        <img class="project-image" src="project-images/sparkr.png" alt="Sparkr">
-        <p claas="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="" class="project-link">Site</a>
-        <a href="" class="project-link">Code</a>
+        <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="left">
+            <img class="project-image" src="project-images/sparkr.png" alt="Sparkr">
+            <a href="" class="project-link">Site</a>  
+        </div>
+        <div class="right">
+          <div id="sparkr-visualisation"></div>
+          <a href="" class="project-link">Code</a>
+        </div>
       </div>
       <div class="project">
         <h3>Twitter</h3>
         <img class="project-image" src="project-images/twitter.png" alt="Twitter">
-        <p claas="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a href="" class="project-link">Site</a>
+        <div id="twitter-visualisation"></div>
         <a href="" class="project-link">Code</a>
       </div>
       <div class="project">
         <h3>Faith in Numbers</h3>
+        <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <img class="project-image" src="project-images/faith-in-numbers.png" alt="Faith in Numbers">
-        <p claas="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a href="" class="project-link">Site</a>
+        <div id="fin-visualisation"></div>
         <a href="" class="project-link">Code</a>
       </div>
     </div>
