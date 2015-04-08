@@ -15,11 +15,17 @@ $(document).ready(function(){
   }
   hideAll();
 
+  var showHome = function(){
+    hideAll();
+    $home.removeClass('hide');
+  }
+  showHome();
+
   var showPages = Sammy(function() {
 
     this.element_selector = '.content-container';
 
-    this.get('index.html', function(context) {
+    this.get('#/', function(context) {
       // The context.app.swap('') tells Sammy to replace what's in my content div, rather than just appending to it.
         context.app.swap('');
         context.$element().append($home);
@@ -55,6 +61,33 @@ $(document).ready(function(){
 
   showPages.run();
 
+  // draw name divs home page
+
+  var drawNameDivs = function(){
+
+    var dotCount = 1;
+    var rowCount = 1;
+    // var $nameContainer = $('.name-container');
+ 
+    // put 30 rows in the name container
+    _(30).times(function(){ 
+      $('<div></div>').addClass('row-div').addClass("'r" + rowCount++ + "'").appendTo('.name-container');
+    });
+
+    // for every row, append 300 dot divs 
+    var rowDiv = $('.row-div')
+    for (var i = 0; i < rowDiv.length; i++) {
+      var currnetRowDiv = rowDiv[i];
+      _(160).times(function(){ 
+        $('<div></div>').addClass('dot-div').addClass("'d" + dotCount++ + "'").appendTo(currnetRowDiv);
+        console.log('appending row');
+      });
+    };
+  }
+
+  drawNameDivs();
+
+  // toggles the color of the selected nav link
   var toggleFont = function(){
     console.log('toggle being called');
     $('.nav-li i, .nav-link').css('color', '#888');
@@ -63,7 +96,6 @@ $(document).ready(function(){
 
   $('.nav-li').on('click', toggleFont);
   
-
   // Faith in Numbers code flower
   var finCodeFlower;
   var createCodeFlower = function(json) {
@@ -134,77 +166,3 @@ $(document).ready(function(){
 
 });
 
-
-  // var showHome = function(){
-  //   hideAll();
-  //   $home.removeClass('hide');
-  // }
-  // showHome();
-
-
-// var app = Sammy('#content-container', function() {
-//   // include a plugin
-//   // this.use('Mustache');
-
-//   // define a 'route'
-//   this.get('#/about', function() {
-//     // load some data
-//     // this.load('posts.json')
-//         // render a template
-//         // .renderEach('post.mustache')
-
-//         // swap the DOM with the new content
-//         .swap();
-//   });
-// });
-
-// // start the application
-// app.run('#/');
-
- // $('.home-link').on('click', function(event){
-  //   event.preventDefault();
-  //   showHome();
-  // });
-
-  // $('.projects-link').on('click', function(event){
-  //   event.preventDefault();
-  //   showProjects();
-  // });
-
-  // $('.about-link').on('click', function(event){
-  //   event.preventDefault();
-  //   showAbout();
-  // });
-
-  // $('.contact-link').on('click', function(event){
-  //   event.preventDefault();
-  //   showContact();
-  // });
-
-
-
-
-
-  // var showHome = function(){
-  //   hideAll();
-  //   $home.removeClass('hide');
-  // }
-  // // showHome();
-
-  // var showAbout = function(){
-  //   hideAll();
-  //   $about.removeClass('hide');
-  // }
-
-  // var showProjects = function(){
-  //   hideAll();
-  //   $projects.removeClass('hide');
-  // }
-
-  // var showContact = function(){
-  //   hideAll();
-  //   $contact.removeClass('hide');
-  // }
-
-
-  // $('nav a').smoothScroll();

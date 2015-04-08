@@ -43,6 +43,7 @@ header {
   position: fixed;
   background-color: #fff;
   border-top: 3px solid #32415b;
+  border-bottom: 3px solid #FFE11A;
 }
 
 nav {
@@ -140,10 +141,14 @@ h3 {
 }
 
 #social-icons a {
-  color: #888;
+  color: #32415b;
   font-size: 50px;
   text-decoration: none;
   padding: 5px;
+}
+
+#social-icons a:hover{
+  color:#FFE11A;
 }
 
 .left {
@@ -185,6 +190,54 @@ line.link {
   stroke-width: 1.5px;
 }
 
+.technologies {
+  font-size: 0.5em;
+}
+
+.name-container {
+  width: 100%;
+  /*position: relative;*/
+}
+
+.row-div {
+  width: 100%;
+  border: 1px solid yellow;
+  /*position: relative;*/
+}
+
+.dot-div {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  /*border: 1px solid lightgrey;*/
+  border-radius: 50%;
+  background-color: grey;
+  margin: 1px;
+  /*position: absolute;*/
+}
+
+.dot-div:hover {
+  background-color: #FFE11A;
+}
+
+#about {
+  text-align: center;
+}
+
+#about p {
+  font-size: 1.5em;
+}
+
+.resume-download-link, .project-link{
+  display: inline-block;
+  border: 3px solid #FFE11A;
+  padding: 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #32415b;
+  text-align: center;
+  /*width: ;*/
+}
 
 
 /*tablet*/
