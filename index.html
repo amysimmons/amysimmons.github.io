@@ -5,6 +5,7 @@
   <title>Amy Simmons</title>
   <link rel="stylesheet" href="css/portfolio.css">
   <!-- <link rel="stylesheet" type="text/html" href="fonts/perfograma"> -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
   <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <script src="js/CodeFlower.js" charset="utf-8"></script>
@@ -23,15 +24,13 @@
         <li class="nav-li"><i class="fa fa-laptop nav-icon"></i><a href="#/projects" class="nav-link projects-link">projects</a></li>
         <li class="nav-li"><i class="fa fa-info nav-icon"></i><a href="#/about" class="nav-link about-link">about</a></li>
         <li class="nav-li"><i class="fa fa-envelope-o nav-icon"></i><a href="#/contact" class="nav-link contact-link">contact</a></li>
+        <li class="nav-li"><i class="fa fa-code nav-icon"></i><a href="#/just-for-fun" class="nav-link contact-link">Just for fun</a></li>
       </ul>
     </nav>
   </header>
   <div class="content-container">
     <div class="section" id="home">
-      <h1 class="name">Amy Simmons</h1>
-      <div class="name-container">
-
-      </div>
+      <h1 class="name">Hi! I'm <span class="highlight">Amy</span>, a full-stack web <span class="highlight">developer</span> in <span class="highlight">Sydney</span>, Australia.</h1>
     </div>
     <div class="section" id="projects">
       <h2>Projects</h2>
@@ -39,37 +38,37 @@
         <h3>Playa</h3>
         <p class="project-desc">My final project for Web Development Immersive. Playa brings democracy to music playlists, allowing guests to add an equal number of songs and vote to skip.</p>
         <div class="technologies">Ruby on Rails | JavaScript | jQuery | Backbone.js | Underscore.js | Ajax| HTML | CSS </div>
+        <a href="https://playa-app.herokuapp.com/" class="project-link">View site</a>    
+        <a href="https://github.com/amysimmons/playa_app" class="project-link">View code</a>
+        <a href="#/just-for-fun" class="project-link">Code flower</a>
         <img class="project-image" src="project-images/playa.png" alt="Playa">
-        <a href="" class="project-link">View site</a>    
-        <div id="playa-visualisation"></div>
-        <a href="" class="project-link">View code</a>
       </div>
       <div class="project">
         <h3>Sparkr </h3>
         <p class="project-desc">My second project for Web Development Immersive. Sparkr is a dating app for mature-aged singles, where connections are formed through moments.</p>
         <div class="technologies">Ruby on Rails | JavaScript | jQuery | Ajax | Handlebars.js| HTML | CSS </div>
+        <a href="http://make-sparks-fly.herokuapp.com/" class="project-link">View site</a>  
+        <a href="https://github.com/amysimmons/sparkr_app" class="project-link">View code</a>
+        <a href="#/just-for-fun" class="project-link">Code flower</a>
         <img class="project-image" src="project-images/sparkr.png" alt="Sparkr">
-        <a href="" class="project-link">View site</a>  
-        <div id="sparkr-visualisation"></div>
-        <a href="" class="project-link">View code</a>
       </div>
       <div class="project">
         <h3>Twitter </h3>
-        <div class="technologies">Ruby on Rails | JavaScript | jQuery | HTML | CSS </div>
-        <img class="project-image" src="project-images/twitter.png" alt="Twitter">
         <p class="project-desc">My first project for Web Development Immersive. I built a version of Twitter which allows users to quickly and easily separate accredited News tweets from the noise.</p>
-        <a href="" class="project-link">View site</a>
-        <div id="twitter-visualisation"></div>
-        <a href="" class="project-link">View code</a>
+        <div class="technologies">Ruby on Rails | JavaScript | jQuery | HTML | CSS </div>
+        <a href="http://twitter-news.herokuapp.com/" class="project-link">View site</a>
+        <a href="https://github.com/amysimmons/twitter" class="project-link">View code</a>
+        <a href="#/just-for-fun" class="project-link">Code flower</a>
+        <img class="project-image" src="project-images/twitter.png" alt="Twitter">
       </div>
       <div class="project">
         <h3>Faith in Numbers</h3>
-        <div class="technologies">JavaScript | jQuery | D3js | HTML | CSS</div>
         <p class="project-desc">I built this website in March 2014 as my final project in General Assembly’s Front-End Web Development course. It was my first time using d3js.</p>
+        <div class="technologies">JavaScript | jQuery | D3js | HTML | CSS</div>
+        <a href="http://faithinnumbers.com.au/" class="project-link">View site</a>
+        <a href="https://github.com/amysimmons/Faith-in-Numbers" class="project-link">View code</a>
+        <a href="#/just-for-fun" class="project-link">Code flower</a>
         <img class="project-image" src="project-images/faith-in-numbers.png" alt="Faith in Numbers">
-        <a href="" class="project-link">View site</a>
-        <div id="fin-visualisation"></div>
-        <a href="" class="project-link">View code</a>
       </div>
     </div>
     <div class="section" id="about">
@@ -82,13 +81,43 @@
     <div class="section" id="contact">
       <h2>Contact</h2>
       <div id="social-icons">
+        <a class="fa fa-envelope-o" href="mailto:amysimmons.abc@gmail.com"></a>
         <a class="fa fa-github" href="https://github.com/amysimmons"></a>
         <a class="fa fa-twitter" href="https://twitter.com/amesimmons"></a>
         <a class="fa fa-linkedin" href="https://au.linkedin.com/in/amesimmons"></a>
-        <a class="fa fa-envelope-o" href="mailto:amysimmons.abc@gmail.com"></a>
       </div>
     </div>
-    <footer></footer>
+    <div class="section" id="just-for-fun">
+      <h2>Just for fun</h2>
+      <h3>Code flowers</h3>
+      <p>Each disc represents a file, with a radius proportional to the number of lines of code. Source: Via <a href="http://www.redotheweb.com/CodeFlower/">François Zaninotto</a>, built with D3js.</p>
+      <div class="code-flower-container">
+
+        <div class="code-flower">
+          <h4>Playa</h4>
+          <div id="playa-visualisation"></div>  
+        </div>
+
+        <div class="code-flower">
+          <h4>Sparkr</h4>
+          <div id="sparkr-visualisation"></div> 
+        </div>
+
+        <div class="code-flower">
+          <h4>Twitter</h4>
+          <div id="twitter-visualisation"></div>
+        </div>
+
+        <div class="code-flower">
+          <h4>Faith In Numbers</h4>
+          <div id="fin-visualisation"></div>
+        </div>
+
+      </div>
+    </div>
   </div>
+<!--   <footer>
+    <a href="#/just-for-fun">Just for fun</a>
+  </footer> -->
 </body>
 </html>

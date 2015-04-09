@@ -6,18 +6,21 @@ $(document).ready(function(){
   $about = $('#about')
   $contact = $('#contact')
   $projects = $('#projects')
+  $justForFun = $('#just-for-fun')
 
   var hideAll = function(){
     $home.addClass('hide');
     $about.addClass('hide');
     $contact.addClass('hide');
     $projects.addClass('hide');
+    $justForFun.addClass('hide');
   }
   hideAll();
 
   var showHome = function(){
     hideAll();
     $home.removeClass('hide');
+    $('body').css('background-color', '#FFE11A');
   }
   showHome();
 
@@ -29,15 +32,17 @@ $(document).ready(function(){
       // The context.app.swap('') tells Sammy to replace what's in my content div, rather than just appending to it.
         context.app.swap('');
         context.$element().append($home);
-        $home.removeClass('hide')
-        console.log('appenidn home')
+        $home.removeClass('hide');
+        $('body').css('background-color', '#FFE11A');
+        console.log('appenidn home');
     });
 
     this.get('#/projects', function(context) {
       // The context.app.swap('') tells Sammy to replace what's in my content div, rather than just appending to it.
         context.app.swap('');
         context.$element().append($projects);
-        $projects.removeClass('hide')
+        $projects.removeClass('hide');
+        $('body').css('background-color', '#fff');
         console.log('appenidn projects')
     });
 
@@ -45,7 +50,8 @@ $(document).ready(function(){
       // The context.app.swap('') tells Sammy to replace what's in my content div, rather than just appending to it.
         context.app.swap('');
         context.$element().append($about);
-        $about.removeClass('hide')
+        $about.removeClass('hide');
+        $('body').css('background-color', '#fff');
         console.log('appenidn about')
     });
 
@@ -53,48 +59,23 @@ $(document).ready(function(){
       // The context.app.swap('') tells Sammy to replace what's in my content div, rather than just appending to it.
         context.app.swap('');
         context.$element().append($contact);
-        $contact.removeClass('hide')
+        $contact.removeClass('hide');
+        $('body').css('background-color', '#fff');
         console.log('appenidn contact')
+    });
+
+    this.get('#/just-for-fun', function(context) {
+      // The context.app.swap('') tells Sammy to replace what's in my content div, rather than just appending to it.
+        context.app.swap('');
+        context.$element().append($justForFun);
+        $justForFun.removeClass('hide');
+        $('body').css('background-color', '#fff');
+        console.log('appenidn justforfun')
     });
 
   });
 
   showPages.run();
-
-  // draw name divs home page
-
-  var drawNameDivs = function(){
-
-    var dotCount = 1;
-    var rowCount = 1;
-    // var $nameContainer = $('.name-container');
- 
-    // put 30 rows in the name container
-    _(30).times(function(){ 
-      $('<div></div>').addClass('row-div').addClass("'r" + rowCount++ + "'").appendTo('.name-container');
-    });
-
-    // for every row, append 300 dot divs 
-    var rowDiv = $('.row-div')
-    for (var i = 0; i < rowDiv.length; i++) {
-      var currnetRowDiv = rowDiv[i];
-      _(160).times(function(){ 
-        $('<div></div>').addClass('dot-div').addClass("'d" + dotCount++ + "'").appendTo(currnetRowDiv);
-        console.log('appending row');
-      });
-    };
-  }
-
-  drawNameDivs();
-
-  // toggles the color of the selected nav link
-  var toggleFont = function(){
-    console.log('toggle being called');
-    $('.nav-li i, .nav-link').css('color', '#888');
-    $(this).children().css('color', '#32415b');
-  };
-
-  $('.nav-li').on('click', toggleFont);
   
   // Faith in Numbers code flower
   var finCodeFlower;
@@ -166,3 +147,38 @@ $(document).ready(function(){
 
 });
 
+
+  // draw name divs home page
+
+  // var drawNameDivs = function(){
+
+  //   var dotCount = 1;
+  //   var rowCount = 1;
+  //   // var $nameContainer = $('.name-container');
+ 
+  //   // put 30 rows in the name container
+  //   _(30).times(function(){ 
+  //     $('<div></div>').addClass('row-div').addClass("'r" + rowCount++ + "'").appendTo('.name-container');
+  //   });
+
+  //   // for every row, append 300 dot divs 
+  //   var rowDiv = $('.row-div')
+  //   for (var i = 0; i < rowDiv.length; i++) {
+  //     var currnetRowDiv = rowDiv[i];
+  //     _(160).times(function(){ 
+  //       $('<div></div>').addClass('dot-div').addClass("'d" + dotCount++ + "'").appendTo(currnetRowDiv);
+  //       console.log('appending row');
+  //     });
+  //   };
+  // }
+
+  // drawNameDivs();
+
+  // // toggles the color of the selected nav link
+  // var toggleFont = function(){
+  //   console.log('toggle being called');
+  //   // $('.nav-li i, .nav-link').css('color', '#888');
+  //   $(this).css('text-decoration', 'underline');
+  // };
+
+  // $('.nav-li').on('click', toggleFont);
