@@ -1,23 +1,23 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 
-html, body {
-}
-
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   color: #212121;
+  font-size: 1em;
 }
 
 .content-container{
+  font-size: 1.5em;
   width: 80%;
   margin: auto;
   margin-top: 170px;
   margin-bottom: 100px;
+  text-align: center;
 }
 
 header {
-  font-size: 20px;
+  font-size: 1.3em;
   top: 0;
   right: 0;
   left: 0;
@@ -66,7 +66,7 @@ nav a:hover {
 }
 
 .name {
-  font-size: 7em;
+  font-size: 5em;
   text-align: center;
   color: #fff;
   font-family:'Perfograma';
@@ -82,7 +82,8 @@ h2{
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 50px;
+  /*font-size: 50px;*/
+  font-size: 2em;
   font-family: 'Lato', sans-serif;
 }
 
@@ -96,9 +97,13 @@ h3 {
   display: none;
 }
 
-.project{
-  margin-top: 100px;
-  margin-bottom: 100px;
+.project, .code-flower-container {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.about-content, #social-icons {
+  margin-top: 5%;
 }
 
 .project-link{
@@ -186,21 +191,14 @@ line.link {
   font-size: 1em;
 }
 
-#about {
-  text-align: center;
-}
-
-#about p {
-  font-size: 1.5em;
-}
-
 .resume-download-link{
   display: inline-block;
   border: 3px solid #FFE11A;
-  padding: 2em;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  padding: 1em;
+  margin: 1em;
 }
 
 #just-for-fun {
@@ -210,6 +208,18 @@ line.link {
 .code-flower {
   width: 100%;
   display: inline-block;
+}
+
+.profile {
+  width: 30%;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.profile:hover {
+  filter: none;
+  -webkit-filter: none;
 }
 
 /*tablet*/
@@ -222,15 +232,5 @@ line.link {
 
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
