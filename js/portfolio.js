@@ -1,5 +1,3 @@
-// console.log('portfolio js');
-
 $(document).ready(function(){
 
   $home = $('#home')
@@ -34,7 +32,6 @@ $(document).ready(function(){
         context.$element().append($home);
         $home.removeClass('hide');
         $('body').css('background-color', '#FFE11A');
-        console.log('appenidn home');
     });
 
     this.get('#/projects', function(context) {
@@ -43,7 +40,6 @@ $(document).ready(function(){
         context.$element().append($projects);
         $projects.removeClass('hide');
         $('body').css('background-color', '#fff');
-        console.log('appenidn projects')
     });
 
     this.get('#/about', function(context) {
@@ -52,7 +48,6 @@ $(document).ready(function(){
         context.$element().append($about);
         $about.removeClass('hide');
         $('body').css('background-color', '#fff');
-        console.log('appenidn about')
     });
 
     this.get('#/contact', function(context) {
@@ -61,7 +56,6 @@ $(document).ready(function(){
         context.$element().append($contact);
         $contact.removeClass('hide');
         $('body').css('background-color', '#fff');
-        console.log('appenidn contact')
     });
 
     this.get('#/just-for-fun', function(context) {
@@ -70,83 +64,78 @@ $(document).ready(function(){
         context.$element().append($justForFun);
         $justForFun.removeClass('hide');
         $('body').css('background-color', '#fff');
-        console.log('appenidn justforfun')
+
+      // Faith in Numbers code flower
+      var finCodeFlower;
+      var createCodeFlower = function(json) {
+        // update the jsonData textarea
+        // document.getElementById('jsonData').innerHTML = JSON.stringify(json);
+        // remove previous flower to save memory
+        if (finCodeFlower) finCodeFlower.cleanup();
+        // adapt layout size to the total number of elements
+        var total = countElements(json);
+        w = parseInt(Math.sqrt(total) * 30, 10);
+        h = parseInt(Math.sqrt(total) * 30, 10);
+        // create a new CodeFlower
+        finCodeFlower = new CodeFlower("#fin-visualisation", w, h).update(json);
+      };
+      d3.json('js/fin.json', createCodeFlower);
+
+      // Sparkr code flower
+      var sparkrCodeFlower;
+      var createCodeFlower = function(json) {
+        // update the jsonData textarea
+        // document.getElementById('jsonData').innerHTML = JSON.stringify(json);
+        // remove previous flower to save memory
+        if (sparkrCodeFlower) sparkrCodeFlower.cleanup();
+        // adapt layout size to the total number of elements
+        var total = countElements(json);
+        w = parseInt(Math.sqrt(total) * 30, 10);
+        h = parseInt(Math.sqrt(total) * 30, 10);
+        // create a new CodeFlower
+        sparkrCodeFlower = new CodeFlower("#sparkr-visualisation", w, h).update(json);
+      };
+      d3.json('js/sparkr.json', createCodeFlower);
+
+      // Twitter code flower
+      var twitterCodeFlower;
+      var createCodeFlower = function(json) {
+        // update the jsonData textarea
+        // document.getElementById('jsonData').innerHTML = JSON.stringify(json);
+        // remove previous flower to save memory
+        if (twitterCodeFlower) twitterCodeFlower.cleanup();
+        // adapt layout size to the total number of elements
+        var total = countElements(json);
+        w = parseInt(Math.sqrt(total) * 30, 10);
+        h = parseInt(Math.sqrt(total) * 30, 10);
+        // create a new CodeFlower
+        twitterCodeFlower = new CodeFlower("#twitter-visualisation", w, h).update(json);
+      };
+      d3.json('js/twitter.json', createCodeFlower);
+
+      // Playa code flower
+      var playaCodeFlower;
+      var createCodeFlower = function(json) {
+        // update the jsonData textarea
+        // document.getElementById('jsonData').innerHTML = JSON.stringify(json);
+        // remove previous flower to save memory
+        if (playaCodeFlower) playaCodeFlower.cleanup();
+        // adapt layout size to the total number of elements
+        var total = countElements(json);
+        w = parseInt(Math.sqrt(total) * 30, 10);
+        h = parseInt(Math.sqrt(total) * 30, 10);
+        // create a new CodeFlower
+        playaCodeFlower = new CodeFlower("#playa-visualisation", w, h).update(json);
+      };
+      d3.json('js/playa.json', createCodeFlower);
+
     });
 
   });
 
   showPages.run();
   
-  // Faith in Numbers code flower
-  var finCodeFlower;
-  var createCodeFlower = function(json) {
-    // update the jsonData textarea
-    // document.getElementById('jsonData').innerHTML = JSON.stringify(json);
-    // remove previous flower to save memory
-    if (finCodeFlower) finCodeFlower.cleanup();
-    // adapt layout size to the total number of elements
-    var total = countElements(json);
-    w = parseInt(Math.sqrt(total) * 30, 10);
-    h = parseInt(Math.sqrt(total) * 30, 10);
-    // create a new CodeFlower
-    finCodeFlower = new CodeFlower("#fin-visualisation", w, h).update(json);
-  };
-  d3.json('js/fin.json', createCodeFlower);
-
-
-  // Sparkr code flower
-  var sparkrCodeFlower;
-  var createCodeFlower = function(json) {
-    // update the jsonData textarea
-    // document.getElementById('jsonData').innerHTML = JSON.stringify(json);
-    // remove previous flower to save memory
-    if (sparkrCodeFlower) sparkrCodeFlower.cleanup();
-    // adapt layout size to the total number of elements
-    var total = countElements(json);
-    w = parseInt(Math.sqrt(total) * 30, 10);
-    h = parseInt(Math.sqrt(total) * 30, 10);
-    // create a new CodeFlower
-    sparkrCodeFlower = new CodeFlower("#sparkr-visualisation", w, h).update(json);
-  };
-  d3.json('js/sparkr.json', createCodeFlower);
-
-
-  // Twitter code flower
-  var twitterCodeFlower;
-  var createCodeFlower = function(json) {
-    // update the jsonData textarea
-    // document.getElementById('jsonData').innerHTML = JSON.stringify(json);
-    // remove previous flower to save memory
-    if (twitterCodeFlower) twitterCodeFlower.cleanup();
-    // adapt layout size to the total number of elements
-    var total = countElements(json);
-    w = parseInt(Math.sqrt(total) * 30, 10);
-    h = parseInt(Math.sqrt(total) * 30, 10);
-    // create a new CodeFlower
-    twitterCodeFlower = new CodeFlower("#twitter-visualisation", w, h).update(json);
-  };
-  d3.json('js/twitter.json', createCodeFlower);
-
-
-  // Playa code flower
-  var playaCodeFlower;
-  var createCodeFlower = function(json) {
-    // update the jsonData textarea
-    // document.getElementById('jsonData').innerHTML = JSON.stringify(json);
-    // remove previous flower to save memory
-    if (playaCodeFlower) playaCodeFlower.cleanup();
-    // adapt layout size to the total number of elements
-    var total = countElements(json);
-    w = parseInt(Math.sqrt(total) * 30, 10);
-    h = parseInt(Math.sqrt(total) * 30, 10);
-    // create a new CodeFlower
-    playaCodeFlower = new CodeFlower("#playa-visualisation", w, h).update(json);
-  };
-  d3.json('js/playa.json', createCodeFlower);
-
-
 });
-
 
   // draw name divs home page
 
