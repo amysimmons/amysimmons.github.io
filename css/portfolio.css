@@ -224,12 +224,29 @@ line.link {
 
 /*tablet*/
 @media screen and (max-width: 1023px){
+
   
 }
 
 /*mobile*/
 @media screen and (max-width: 767px){
 
+  .name {
+      font-size: 2.5em;
+  }
+
+  .resume-download-link{
+    font-size: 0.7em;
+  }
+  
+  .profile {
+    width: 60%;
+  }
+
+  .project-link{
+    font-size: 0.7em;
+    padding: 1em 0em 0em 1em;
+  }
 
 }
 
