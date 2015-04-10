@@ -18,7 +18,7 @@ $(document).ready(function(){
   var showHome = function(){
     hideAll();
     $home.removeClass('hide');
-    $('body').css('background-color', '#FFE11A');
+    $('body').css('background-color', '#FFD10F');
   }
   showHome();
 
@@ -31,7 +31,8 @@ $(document).ready(function(){
         context.app.swap('');
         context.$element().append($home);
         $home.removeClass('hide');
-        $('body').css('background-color', '#FFE11A');
+        $('nav ul').removeClass('show-menu');
+        $('body').css('background-color', '#FFD10F');
     });
 
     this.get('#/projects', function(context) {
@@ -39,6 +40,7 @@ $(document).ready(function(){
         context.app.swap('');
         context.$element().append($projects);
         $projects.removeClass('hide');
+        $('nav ul').removeClass('show-menu');
         $('body').css('background-color', '#fff');
     });
 
@@ -47,6 +49,7 @@ $(document).ready(function(){
         context.app.swap('');
         context.$element().append($about);
         $about.removeClass('hide');
+        $('nav ul').removeClass('show-menu');
         $('body').css('background-color', '#fff');
     });
 
@@ -55,6 +58,7 @@ $(document).ready(function(){
         context.app.swap('');
         context.$element().append($contact);
         $contact.removeClass('hide');
+        $('nav ul').removeClass('show-menu');
         $('body').css('background-color', '#fff');
     });
 
@@ -63,6 +67,7 @@ $(document).ready(function(){
         context.app.swap('');
         context.$element().append($justForFun);
         $justForFun.removeClass('hide');
+        $('nav ul').removeClass('show-menu');
         $('body').css('background-color', '#fff');
 
 
@@ -139,6 +144,15 @@ $(document).ready(function(){
 
   showPages.run();
   
+  var showNavMenu = function(){
+    $('nav ul').toggleClass('show-menu');
+  };
+
+  $('.hamburger').on('click', showNavMenu);
+
+
+  // var hideNavMenu = 
+
 });
 
   // draw name divs home page

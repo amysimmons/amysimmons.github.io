@@ -23,7 +23,7 @@ header {
   left: 0;
   z-index: 1000;
   position: fixed;
-  background-color: #FFE11A;
+  background-color: #FFD10F;
 }
 
 nav {
@@ -45,7 +45,7 @@ a {
 }
 
 a:hover {
-  color: #FFE11A;
+  color: #FFD10F;
 }
 
 nav a:hover {
@@ -116,7 +116,7 @@ h3 {
 }
 
 .project-link:hover{
-   color: #FFE11A;
+   color: #FFD10F;
 }
 
 .project-image{
@@ -143,7 +143,7 @@ h3 {
 }
 
 #social-icons a:hover{
-  color: #FFE11A;
+  color: #FFD10F;
 }
 
 .left {
@@ -193,7 +193,7 @@ line.link {
 
 .resume-download-link{
   display: inline-block;
-  border: 3px solid #FFE11A;
+  border: 3px solid #FFD10F;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -222,6 +222,10 @@ line.link {
   -webkit-filter: none;
 }
 
+.hamburger {
+  display: none;
+}
+
 /*tablet*/
 @media screen and (max-width: 1023px){
 
@@ -246,6 +250,30 @@ line.link {
   .project-link{
     font-size: 0.7em;
     padding: 1em 0em 0em 1em;
+  }
+
+  .nav-li {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    padding: 20px;
+  }
+
+  nav ul {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.8s;
+    -moz-transition: max-height 0.8s;
+    transition: max-height 0.8s;
+  }
+
+  nav ul.show-menu {
+    padding-bottom: 1.1em;
+    /*height: auto;*/
+    max-height: 160px;
   }
 
 }
