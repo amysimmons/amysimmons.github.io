@@ -65,6 +65,10 @@ $(document).ready(function(){
         $justForFun.removeClass('hide');
         $('body').css('background-color', '#fff');
 
+
+      var windowWidth = $('.content-container').width();
+      console.log('windowWidth: ' + windowWidth);
+
       // Faith in Numbers code flower
       var finCodeFlower;
       var createCodeFlower = function(json) {
@@ -74,10 +78,10 @@ $(document).ready(function(){
         if (finCodeFlower) finCodeFlower.cleanup();
         // adapt layout size to the total number of elements
         var total = countElements(json);
-        w = parseInt(Math.sqrt(total) * 30, 10);
-        h = parseInt(Math.sqrt(total) * 30, 10);
+        var size = parseInt(Math.sqrt(total) * 30, 10);
+        size = Math.min(size, windowWidth);
         // create a new CodeFlower
-        finCodeFlower = new CodeFlower("#fin-visualisation", w, h).update(json);
+        finCodeFlower = new CodeFlower("#fin-visualisation", size, size).update(json);
       };
       d3.json('js/fin.json', createCodeFlower);
 
@@ -90,10 +94,10 @@ $(document).ready(function(){
         if (sparkrCodeFlower) sparkrCodeFlower.cleanup();
         // adapt layout size to the total number of elements
         var total = countElements(json);
-        w = parseInt(Math.sqrt(total) * 30, 10);
-        h = parseInt(Math.sqrt(total) * 30, 10);
+        var size = parseInt(Math.sqrt(total) * 30, 10) + 150;
+        size = Math.min(size, windowWidth);
         // create a new CodeFlower
-        sparkrCodeFlower = new CodeFlower("#sparkr-visualisation", w, h).update(json);
+        sparkrCodeFlower = new CodeFlower("#sparkr-visualisation", size, size).update(json);
       };
       d3.json('js/sparkr.json', createCodeFlower);
 
@@ -106,10 +110,10 @@ $(document).ready(function(){
         if (twitterCodeFlower) twitterCodeFlower.cleanup();
         // adapt layout size to the total number of elements
         var total = countElements(json);
-        w = parseInt(Math.sqrt(total) * 30, 10);
-        h = parseInt(Math.sqrt(total) * 30, 10);
+        var size = parseInt(Math.sqrt(total) * 30, 10) + 150;
+        size = Math.min(size, windowWidth);
         // create a new CodeFlower
-        twitterCodeFlower = new CodeFlower("#twitter-visualisation", w, h).update(json);
+        twitterCodeFlower = new CodeFlower("#twitter-visualisation", size, size).update(json);
       };
       d3.json('js/twitter.json', createCodeFlower);
 
@@ -122,10 +126,10 @@ $(document).ready(function(){
         if (playaCodeFlower) playaCodeFlower.cleanup();
         // adapt layout size to the total number of elements
         var total = countElements(json);
-        w = parseInt(Math.sqrt(total) * 30, 10);
-        h = parseInt(Math.sqrt(total) * 30, 10);
+        var size = parseInt(Math.sqrt(total) * 30, 10) + 150;
+        size = Math.min(size, windowWidth);
         // create a new CodeFlower
-        playaCodeFlower = new CodeFlower("#playa-visualisation", w, h).update(json);
+        playaCodeFlower = new CodeFlower("#playa-visualisation", size, size).update(json);
       };
       d3.json('js/playa.json', createCodeFlower);
 
