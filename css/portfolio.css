@@ -107,7 +107,7 @@ h3 {
   margin-top: 5%;
 }
 
-.project-link{
+.project-link {
   padding: 2em 1em 0 0;
   text-decoration: none;
   display: inline-block;
@@ -116,11 +116,11 @@ h3 {
   text-decoration: none;
 }
 
-.project-link:hover{
+.project-link:hover {
    color: #FFD10F;
 }
 
-.project-image{
+.project-image {
   width: 100%;
   padding: 30px 0;
 }
@@ -148,6 +148,71 @@ h3 {
 .right {
   display: inline-block;
   width: 37%;
+}
+
+#resume {
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.resume-col-1, .resume-col-2 {
+  width: 45%;
+  display: inline-block;
+  margin-right: 5%;
+  vertical-align: top;
+}
+
+.resume-section {
+  /*display: inline-block;*/
+  border-top: 6px solid #000;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  box-sizing: border-box;
+}
+
+.resume-section h2 {
+  text-align: left;
+  font-weight: 800;
+  text-transform: lowercase;
+  margin: 0;
+  padding-bottom: 2%;
+}
+
+
+.resume-section h3 {
+  font-weight: bold;
+}
+
+
+.resume-section .resume-title {
+  text-transform: uppercase;
+}
+
+.resume-item {
+  border-top: 3px dashed lightgrey;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.resume-date, .resume-info, .resume-achievement {
+  display: block;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.resume-date {
+
+
+}
+
+.resume-info {
+
+
+}
+
+.resume-download {
+  text-align: center;
 }
 
 /*code flowers*/

@@ -142,6 +142,138 @@ var Projects = React.createClass({
   }
 });
 
+var Resume = React.createClass({
+  render (){
+    return (
+       <div className="section" id="resume">
+       <div className="resume-col-1">
+          <div className="resume-section">
+            <h2 className="resume-title">RESUME</h2>
+            <h3>AMY SIMMONS</h3>
+            <div className="resume-item">
+              <span className="resume-info">
+                +61 404 925 905 | @amesimmons | amysimmons.github.io | amysimmons.abc@gmail.com
+              </span>
+            </div>
+          </div>
+          <div className="resume-section">
+            <h2>dev life</h2>
+            <div className="resume-item">
+              <span className="resume-date">December 2015:</span>
+              <span className="resume-info">Yow</span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">December 2015:</span>
+              <span className="resume-info">Girl Geek dinner</span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">November 2015:</span>
+              <span className="resume-info">CampJS talk</span>
+            </div>  
+            <div className="resume-item">
+              <span className="resume-date">October 2015:</span>
+              <span className="resume-info">Web Directions</span>
+            </div>  
+            <div className="resume-item">
+              <span className="resume-date">October 2015:</span>
+              <span className="resume-info">Product Hunt Sydney talk</span>
+            </div>  
+            <div className="resume-item">
+              <span className="resume-date">October 2015:</span>
+              <span className="resume-info">Code Newbies podcast</span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">September to December 2015:</span>
+              <span className="resume-info">JavaScript Study Group organiser and attendee</span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">August 2015:</span>
+              <span className="resume-info">Rails Girls organiser and host</span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">June 2015:</span>
+              <span className="resume-info">Rails Camp</span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">June 2015:</span>
+              <span className="resume-info">SydCss talk</span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">May 2015:</span>
+              <span className="resume-info">SheHacks hackathon</span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">March 2015:</span>
+              <span className="resume-info">Rails Girls Mentor</span>
+            </div>
+          </div>
+        </div>
+        <div className="resume-col-2">
+          <div className="resume-section">
+            <h2>employment history</h2>
+            <div className="resume-item">
+              <span className="resume-date">April 2015 to now:</span>
+              <span className="resume-info">Developer, ansarada</span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">January 2009 to December 2014: </span>
+              <span className="resume-info">Journalist/Digital Producer, Australian Broadcasting Corporation
+              </span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-achievement">Achievement:</span>
+                <span className="resume-info">Nnominated for a Walkley Award for Excellence in Multimedia Storytelling for producing the Promise Tracker – an interactive data visualisation project, which I led for 12 months.
+              </span>
+            </div>
+          </div>
+          <div className="resume-section">
+            <h2>education</h2>
+            <div className="resume-item">
+              <span className="resume-date">April to June 2015:</span>
+              <span className="resume-info">ThoughtWorks LevelUp program
+              </span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">January to April 2015: </span>
+              <span className="resume-info">Web Development Immersive, General Assembly
+              </span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">July 2014:</span>
+              <span className="resume-info">Rails Girls Next
+              </span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">January to March 2014: </span>
+              <span className="resume-info">  Front-End Web Development, General Assembly 
+              </span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">November 2013:</span>
+              <span className="resume-info">Rails Girls Beginner 
+              </span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">2005 to 2008:</span>
+              <span className="resume-info">Bachelor of Journalism & Bachelor of Arts, University of Queensland. I graduated with a GPA of 6 (out of 7). My Arts majors were Religion and Political Science.
+              </span>
+            </div>
+          </div>
+          <div className="resume-section">
+            <h2>skills</h2>
+            <div className="resume-item">
+              <span className="resume-info">JavaScript, React, React Native, jQuery, Canvas, Backbone.js, Underscore.js, HTML, CSS, Ruby, Ruby on Rails, PostgreSQL, SQL, C#, .net</span>
+            </div>
+          </div>
+        </div>
+        <div className="resume-download">
+          <a className="resume-download-link" href="/files/Amy-Simmons-Resume-April-2015.pdf" download>Download my resume</a>
+        </div>
+      </div>
+    )
+  }
+});
+
 var About = React.createClass({
   render (){
     return (
@@ -158,19 +290,7 @@ var About = React.createClass({
   }
 });
 
-var Resume = React.createClass({
-  render (){
-    return (
-       <div className="section" id="resume">
-        <h2>Resume</h2>
-        <a className="resume-download-link" href="/files/Amy-Simmons-Resume-April-2015.pdf" download>Download my resume</a>
-      </div>
-    )
-  }
-});
-
 var JustForFun = React.createClass({
-
   render (){
 
     var windowWidth = $('.content-container').width();
