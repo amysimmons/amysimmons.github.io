@@ -2,14 +2,14 @@ $(document).ready(function(){
 
   $home = $('#home')
   $about = $('#about')
-  $contact = $('#contact')
+  $resume = $('#resume')
   $projects = $('#projects')
   $justForFun = $('#just-for-fun')
 
   var hideAll = function(){
     $home.addClass('hide');
     $about.addClass('hide');
-    $contact.addClass('hide');
+    $resume.addClass('hide');
     $projects.addClass('hide');
     $justForFun.addClass('hide');
   }
@@ -53,11 +53,11 @@ $(document).ready(function(){
         $('body').css('background-color', '#fff');
     });
 
-    this.get('#/contact', function(context) {
+    this.get('#/resume', function(context) {
       // The context.app.swap('') tells Sammy to replace what's in my content div, rather than just appending to it.
         context.app.swap('');
-        context.$element().append($contact);
-        $contact.removeClass('hide');
+        context.$element().append($resume);
+        $resume.removeClass('hide');
         $('nav ul').removeClass('show-menu');
         $('body').css('background-color', '#fff');
     });
@@ -72,7 +72,6 @@ $(document).ready(function(){
 
 
       var windowWidth = $('.content-container').width();
-      console.log('windowWidth: ' + windowWidth);
 
       // Faith in Numbers code flower
       var finCodeFlower;
@@ -149,43 +148,4 @@ $(document).ready(function(){
   };
 
   $('.hamburger').on('click', showNavMenu);
-
-
-  // var hideNavMenu = 
-
 });
-
-  // draw name divs home page
-
-  // var drawNameDivs = function(){
-
-  //   var dotCount = 1;
-  //   var rowCount = 1;
-  //   // var $nameContainer = $('.name-container');
- 
-  //   // put 30 rows in the name container
-  //   _(30).times(function(){ 
-  //     $('<div></div>').addClass('row-div').addClass("'r" + rowCount++ + "'").appendTo('.name-container');
-  //   });
-
-  //   // for every row, append 300 dot divs 
-  //   var rowDiv = $('.row-div')
-  //   for (var i = 0; i < rowDiv.length; i++) {
-  //     var currnetRowDiv = rowDiv[i];
-  //     _(160).times(function(){ 
-  //       $('<div></div>').addClass('dot-div').addClass("'d" + dotCount++ + "'").appendTo(currnetRowDiv);
-  //       console.log('appending row');
-  //     });
-  //   };
-  // }
-
-  // drawNameDivs();
-
-  // // toggles the color of the selected nav link
-  // var toggleFont = function(){
-  //   console.log('toggle being called');
-  //   // $('.nav-li i, .nav-link').css('color', '#888');
-  //   $(this).css('text-decoration', 'underline');
-  // };
-
-  // $('.nav-li').on('click', toggleFont);
