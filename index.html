@@ -12,75 +12,13 @@
   <script src="js/vendor/dataConverter.js"></script>
   <script src="js/vendor/underscore.js"></script>
   <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/jquery.smooth-scroll.js"></script>
-  <script src="js/vendor/sammy.js"></script>
   <script src="js/vendor/react.js"></script>
   <script src="js/vendor/react-dom.js"></script>
+  <script src="https://npmcdn.com/react-router/umd/ReactRouter.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  <script type="text/babel" src="js/components/Portfolio.js"></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <i class="fa fa-bars hamburger"></i>
-      <ul>
-        <li class="nav-li"><i class="fa fa-home nav-icon"></i><a href="#/" class="nav-link home-link">home</a></li>
-        <li class="nav-li"><i class="fa fa-laptop nav-icon"></i><a href="#/projects" class="nav-link projects-link">projects</a></li>
-        <li class="nav-li"><i class="fa fa-info nav-icon"></i><a href="#/about" class="nav-link about-link">about</a></li>
-        <li class="nav-li"><i class="fa fa-envelope nav-icon"></i><a href="#/resume" class="nav-link resume-link">resume</a></li>
-        <li class="nav-li"><i class="fa fa-code nav-icon"></i><a href="#/just-for-fun" class="nav-link fun-link">just for fun</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="content-container" id="content-container">
-    <div class="section" id="home">
-      <h1 class="name">Hi! I'm <span class="highlight">Amy</span>, a full-stack <span class="highlight">web developer</span> in <span class="highlight">Sydney</span>, Australia.</h1>
-      <div id="social-icons">
-        <a class="fa fa-envelope-o" href="mailto:amysimmons.abc@gmail.com"></a>
-        <a class="fa fa-github" href="https://github.com/amysimmons"></a>
-        <a class="fa fa-twitter" href="https://twitter.com/amesimmons"></a>
-        <a class="fa fa-linkedin" href="https://au.linkedin.com/in/amesimmons"></a>
-      </div>
-    </div>
-    <div class="section" id="projects">  
-    </div>
-    <div class="section" id="about">
-      <h2>About</h2>
-      <img class="profile" src="images/profile-pic.jpg" alt="Amy Simmons">
-      <div class="about-content">
-        <p>I spent the first three months of 2015 transitioning from a journalist/digital producer into a full-stack web developer who can build apps from scratch using a variety of programming languages and libraries.</p>
-        <p>I graduated from General Assembly’s Web Development Immersive course in April. During the course I worked the hardest I’ve ever worked, and I loved every minute of it.</p>
-        <p>I can’t wait to find an amazing workplace where I can put my skills and passions to use, continue learning to code and become the best developer I can be.</p>
-      </div>
-    </div>
-    <div class="section" id="resume">
-    </div>
-    <div class="section" id="just-for-fun">
-      <h2>Just for fun</h2>
-      <div class="code-flower-container">
-        <h3>Code flowers</h3>
-        <p>Each disc represents a file, with a radius proportional to the number of lines of code. Source: Via <a href="http://www.redotheweb.com/CodeFlower/">François Zaninotto</a>, built with D3js.</p>
-        <div class="code-flower">
-          <h4>Playa</h4>
-          <div id="playa-visualisation"></div>
-        </div>
-        <div class="code-flower">
-          <h4>Sparkr</h4>
-          <div id="sparkr-visualisation"></div> 
-        </div>
-        <div class="code-flower">
-          <h4>Twitter</h4>
-          <div id="twitter-visualisation"></div>
-        </div>
-        <div class="code-flower">
-          <h4>Faith In Numbers</h4>
-          <div id="fin-visualisation"></div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-    <script src="js/portfolio.js"></script>
-    <script type="text/babel" src="js/projects.js"></script>
-    <script type="text/babel" src="js/resume.js"></script>
+  <div id="root"></div>
 </body>
 </html>
