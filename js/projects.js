@@ -5,9 +5,9 @@ var Project = React.createClass({
      <div className="project">
         <h3>{project.title}</h3>
         <p className="project-desc">{project.description}</p>
-        <div className="technologies">project.technologies</div>
-        <a href={project.site} className="project-link">View site</a>    
-        <a href={project.code} className="project-link">View code</a>
+        <div className="technologies">{project.technologies}</div>
+        <a href={project.site} className="project-link">View site</a> 
+       	<a href={project.code} className="project-link">View code</a>
         <a href={project.flower} className="project-link">Code flower</a>
         <img className="project-image" src={project.image} alt={project.imageAltText}></img>
       </div>
