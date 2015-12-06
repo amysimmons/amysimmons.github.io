@@ -22,7 +22,7 @@ var Home = React.createClass({
     return (
       
         <div className="section" id="home">
-          <h1 className="name">Hi! I''m <span className="highlight">Amy</span>, a full-stack <span className="highlight">web developer</span> in <span className="highlight">Sydney</span>, Australia.</h1>
+          <h1 className="name">Hi! I&#39;m <span className="highlight">Amy</span>, a full-stack <span className="highlight">web developer</span> in <span className="highlight">Sydney</span>, Australia.</h1>
           <div id="social-icons">
             <a className="fa fa-envelope-o" href="mailto:amysimmons.abc@gmail.com"></a>
             <a className="fa fa-github" href="https://github.com/amysimmons"></a>
@@ -75,12 +75,22 @@ var Projects = React.createClass({
       {
       title: "A guide to the care and feeding of new devs",
       description: "In November 2015 I surveyed junior web developers to find out how they could be better supported in the workplace. This website outlines my findings.",
-      technologies: "React | JavaScript | Html | Css",
+      technologies: "React | JavaScript | HTML | CSS",
       site: "http://amysimmons.github.io/a-guide-to-the-care-and-feeding-of-new-devs/",
       code: "https://github.com/amysimmons/a-guide-to-the-care-and-feeding-of-new-devs",
       flower: "",
       image: "project-images/new-devs-guide.png",
       imageAltText: "A guide to the care and feeding of new devs"
+    },
+    {
+      title: "JavaScript Study Group: 6 apps in 10 weeks",
+      description: "I organised a 10-week JavaScript Study Group from September 30 to December 2, 2015. In that time I completed six projects, including a React Native Minesweeper app.",
+      technologies: "React | React Native | JavaScript | jQuery | Canvas | HTML | CSS",
+      site: "http://www.meetup.com/Sydney-JavaScript-Study-Group/about/",
+      code: "https://github.com/amysimmons/js-study-group",
+      flower: "",
+      image: "project-images/js-study-group.png",
+      imageAltText: "JavaScript Study Group: 6 apps in 10 weeks"
     },
     {
       title: "Rails Girls Events",
