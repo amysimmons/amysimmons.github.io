@@ -152,11 +152,11 @@ var Resume = React.createClass({
             <h3>AMY SIMMONS</h3>
             <div className="resume-item">
               <span className="resume-info">
-                <span className="fa fa-phone">+61 404 925 905</span>
-                <a className="fa fa-envelope-o" href="mailto:amysimmons.abc@gmail.com">amysimmons.abc@gmail.com</a>
-                <a className="fa fa-github" href="https://github.com/amysimmons">amysimmons.github.io</a>
-                <a className="fa fa-twitter" href="https://twitter.com/amesimmons">@amesimmons</a>
-                <a className="fa fa-linkedin" href="https://au.linkedin.com/in/amesimmons">linkedin.com/in/amesimmons</a>
+                <a className="fa fa-envelope-o" href="mailto:amysimmons.abc@gmail.com"></a>
+                <a className="fa fa-github" href="https://github.com/amysimmons"></a>
+                <a className="fa fa-twitter" href="https://twitter.com/amesimmons"></a>
+                <a className="fa fa-linkedin" href="https://au.linkedin.com/in/amesimmons"></a><br/> 
+                <span>+61 404 925 905</span>
               </span>
             </div>
           </div>

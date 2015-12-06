@@ -211,9 +211,14 @@ h3 {
   font-weight: bold;
 }
 
-.resume-info {
+.resume-info .fa {
+  font-size: 1.3em;
+  color: #000;
+  padding: 0 2% 0 0;
+}
 
-
+.resume-info a:hover {
+  color: #fe6962;
 }
 
 .resume-download {
@@ -331,6 +336,10 @@ line.link {
     padding-bottom: 1.1em;
     /*height: auto;*/
     max-height: 160px;
+  }
+
+  #resume {
+    width: 100%;
   }
 
   .resume-col-1, .resume-col-2 {
