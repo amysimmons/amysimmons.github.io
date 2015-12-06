@@ -74,7 +74,7 @@ var Projects = React.createClass({
     var projectsData = [
       {
       title: "A guide to the care and feeding of new devs",
-      description: "In November 2015 I surveyed junior web developers to find out how they could be better supported in the workplace. This website outlines my findings.",
+      description: "In November 2015 I interviewed junior web developers to find out how they could be better supported in the workplace. This website outlines my findings.",
       technologies: "React | JavaScript | HTML | CSS",
       site: "http://amysimmons.github.io/a-guide-to-the-care-and-feeding-of-new-devs/",
       code: "https://github.com/amysimmons/a-guide-to-the-care-and-feeding-of-new-devs",
@@ -96,7 +96,7 @@ var Projects = React.createClass({
     },
     {
       title: "Rails Girls Events",
-      description: "I built this Rails app during SheHacks 2015 with Lucy Bain. It was used to manage applications for the Rails Girls Winter 2015 event, which I helped organise.",
+      description: "I contributed to this app during SheHacks 2015 and in the lead up to the Rails Girls 2015 Winter workshop. It was used to manage applications for the event, which I helped organise and host.",
       technologies: "Ruby on Rails | JavaScript | jQuery | HTML | CSS",
       site: "http://rails-girls-events.herokuapp.com/",
       code: "https://github.com/amysimmons/rails-girls-events",
@@ -108,7 +108,7 @@ var Projects = React.createClass({
     {
       title: "Playa",
       description: "My final project for Web Development Immersive. Playa brings democracy to music playlists, allowing guests to add an equal number of songs and vote to skip.",
-      technologies: "Ruby on Rails | JavaScript | jQuery | Backbone.js | Underscore.js | Ajax| HTML | CSS",
+      technologies: "Ruby on Rails | JavaScript | jQuery | Backbone | Underscore | Ajax | HTML | CSS",
       site: "https://playa-app.herokuapp.com",
       code: "https://github.com/amysimmons/playa_app",
       flower: "#/just-for-fun",
@@ -119,7 +119,7 @@ var Projects = React.createClass({
     {
       title: "Sparkr",
       description: "My second project for Web Development Immersive. Sparkr is a dating app for mature-aged singles, where connections are formed through moments.",
-      technologies: "Ruby on Rails | JavaScript | jQuery | Ajax | Handlebars.js| HTML | CSS",
+      technologies: "Ruby on Rails | JavaScript | jQuery | Ajax | Handlebars | HTML | CSS",
       site: "http://make-sparks-fly.herokuapp.com/",
       code: "https://github.com/amysimmons/sparkr_app",
       flower: "#/just-for-fun",
@@ -140,8 +140,8 @@ var Projects = React.createClass({
     },
     {
       title: "Faith in Numbers",
-      description: "I built this website in March 2014 as my final project in General Assembly’s Front-End Web Development course. It was my first time using d3js.",
-      technologies: "JavaScript | jQuery | D3js | HTML | CSS",
+      description: "I built this website in March 2014 as my final project in General Assembly’s Front-End Web Development course. It was my first time using D3.",
+      technologies: "JavaScript | jQuery | D3 | HTML | CSS",
       site: "http://amysimmons.github.io/faith-in-numbers/",
       code: "https://github.com/amysimmons/Faith-in-Numbers",
       flower: "#/just-for-fun",
@@ -301,12 +301,12 @@ var Resume = React.createClass({
           <div className="resume-section">
             <h2>skills</h2>
             <div className="resume-item">
-              <span className="resume-info">JavaScript | React | React Native | jQuery | Canvas | Backbone.js | Underscore.js | HTML | CSS | Ruby | Rails | PostgreSQL | SQL | C# | .net | Interviewing | Writing | Producing | Editing</span>
+              <span className="resume-info">JavaScript | React | React Native | jQuery | Canvas | Backbone | Underscore | HTML | CSS | Ruby | Rails | PostgreSQL | SQL | C# | .net | Interviewing | Writing | Producing | Editing</span>
             </div>
           </div>
         </div>
         <div className="resume-download">
-          <a className="resume-download-link" href="/files/Amy-Simmons-Resume-April-2015.pdf" download>Download my resume</a>
+          <a className="resume-download-link" href="/files/Amy-Simmons-Resume-April-2015.pdf" download>Download</a>
         </div>
       </div>
     )
@@ -331,7 +331,7 @@ var About = React.createClass({
           <p>I spent the first three months of 2015 transitioning from a journalist/digital producer into a full-stack web developer.</p>
           <p>During the course I worked the hardest I’ve ever worked, and I loved every minute of it.</p>
           <p>I graduated in April and received my first full-time developer job, with an amazing company called <a href="https://www.ansarada.com/">ansarada</a>.</p>
-          <p>Now that I&#39;m a developer, I&#39;ve realised that feeling of having "so much to learn" will never go away. It&#39;s overwhelming, but equally exciting.</p>
+          <p>Now that I&#39;m a developer, I&#39;ve realised the feeling of having "so much to learn" will never go away. It&#39;s overwhelming, but equally exciting.</p>
           <p>You can hear more about my journey from journalism to dev in my <a href="http://www.codenewbie.org/podcast/from-journalist-to-developer">CodeNewbie podcast interview</a> and <a href="https://www.youtube.com/watch?v=ljrvFZCuzN4&app=desktop">SydCSS talk</a>.</p>
         </div>
       </div>
