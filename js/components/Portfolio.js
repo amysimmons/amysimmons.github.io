@@ -312,9 +312,19 @@ var About = React.createClass({
         <h2>About</h2>
         <img className="profile" src="images/profile-pic.jpg" alt="Amy Simmons"></img>
         <div className="about-content">
-          <p>I spent the first three months of 2015 transitioning from a journalist/digital producer into a full-stack web developer who can build apps from scratch using a variety of programming languages and libraries.</p>
-          <p>I graduated from General Assembly’s Web Development Immersive course in April. During the course I worked the hardest I’ve ever worked, and I loved every minute of it.</p>
-          <p>I can’t wait to find an amazing workplace where I can put my skills and passions to use, continue learning to code and become the best developer I can be.</p>
+          <p>I started my career in 2009 as a journalist/producer with <a href="http://www.abc.net.au/news/">ABC News Online</a> in Brisbane.</p>
+          <p>From 4:30am to 1:00am, seven days a week, we covered major national and internationl news stories.</p>
+          <p>A few years later I made the move to Sydney, and began working in the ABC&#39;s <a href="http://www.abc.net.au/news/factcheck/">Fact Checking Unit</a>. The unit held politicians to account - testing their claims through in-depth, rigorous research.</p>
+          <p>This was the role that sparked my interest in coding. I wanted to tell stories in new and interesting ways, but didn&#39;t have the technical skills.</p>
+          <p>I wrote my first line of code in November 2013, at a two-day <a href="http://railsgirls.com/sydney">Rails Girls</a> workshop. From that moment I was hooked, and I needed to learn more.</p>
+          <p>In 2014 I took a part-time <a href="https://generalassemb.ly/education/front-end-web-development">front-end web development course</a> with General Assembly, received tutoring from a senior JavaScript developer at the ABC and attended more Rails Girls workshops.</p>
+          <p>At the end of the year, I still wasn&#39;t satisfied. I wasn&#39;t progressing quickly enough, and I had so much to learn!</p>
+          <p>I took the plunge, and signed up for General Assembly’s full-time, 12-week <a href="https://generalassemb.ly/education/web-development-immersive">Web Development Immersive course</a>.</p>
+          <p>I spent the first three months of 2015 transitioning from a journalist/digital producer into a full-stack web developer.</p>
+          <p>During the course I worked the hardest I’ve ever worked, and I loved every minute of it.</p>
+          <p>I graduated in April and received my first full-time developer job, with an amazing company called <a href="https://www.ansarada.com/">ansarada</a>.</p>
+          <p>Now that I&#39;m a developer, I&#39;ve realised that feeling of having "so much to learn" will never go away. It&#39;s overwhelming, but equally exciting.</p>
+          <p>You can hear more about my journey from journalism to dev in my <a href="http://www.codenewbie.org/podcast/from-journalist-to-developer">CodeNewbie podcast interview</a> and <a href="https://www.youtube.com/watch?v=ljrvFZCuzN4&app=desktop">SydCSS talk</a>.</p>
         </div>
       </div>
     )
