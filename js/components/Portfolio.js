@@ -156,7 +156,7 @@ var Resume = React.createClass({
                 <a className="fa fa-github" href="https://github.com/amysimmons"></a>
                 <a className="fa fa-twitter" href="https://twitter.com/amesimmons"></a>
                 <a className="fa fa-linkedin" href="https://au.linkedin.com/in/amesimmons"></a><br/> 
-                <span>+61 404 925 905</span>
+                <span>0404 925 905</span>
               </span>
             </div>
           </div>
@@ -164,11 +164,11 @@ var Resume = React.createClass({
             <h2>dev life</h2>
             <div className="resume-item">
               <span className="resume-date">December 2015:</span>
-              <span className="resume-info">Yow</span>
+              <span className="resume-info">YOW! conference</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">December 2015:</span>
-              <span className="resume-info">Girl Geek dinner</span>
+              <span className="resume-info">Girl Geek Dinner talk</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">November 2015:</span>
@@ -176,7 +176,7 @@ var Resume = React.createClass({
             </div>  
             <div className="resume-item">
               <span className="resume-date">October 2015:</span>
-              <span className="resume-info">Web Directions</span>
+              <span className="resume-info">Web Directions conference</span>
             </div>  
             <div className="resume-item">
               <span className="resume-date">October 2015:</span>
@@ -188,7 +188,7 @@ var Resume = React.createClass({
             </div>
             <div className="resume-item">
               <span className="resume-date">September to December 2015:</span>
-              <span className="resume-info">JavaScript Study Group organiser and attendee</span>
+              <span className="resume-info">JavaScript Study Group organiser, host and attendee</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">August 2015:</span>
@@ -200,7 +200,7 @@ var Resume = React.createClass({
             </div>
             <div className="resume-item">
               <span className="resume-date">June 2015:</span>
-              <span className="resume-info">SydCss talk</span>
+              <span className="resume-info">SydCSS talk</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">May 2015:</span>
@@ -212,7 +212,7 @@ var Resume = React.createClass({
             </div>
             <div className="resume-item">
               <span className="resume-date">March 2015:</span>
-              <span className="resume-info">Rails Girls Mentor</span>
+              <span className="resume-info">Rails Girls mentor</span>
             </div>
           </div>
         </div>
@@ -226,7 +226,7 @@ var Resume = React.createClass({
             </div>
             <div className="resume-item">
               <span className="resume-achievement">Achievement:</span>
-              <span className="resume-info">Nnominated for a Walkley Award for Excellence in Multimedia Storytelling for producing the Promise Tracker – an interactive data visualisation project, which I led for 12 months.
+              <span className="resume-info">Nominated for a Walkley Award for Excellence in Multimedia Storytelling for producing the Promise Tracker – an interactive data visualisation project, which I led for 12 months.
               </span>
             </div>
           </div>
@@ -266,7 +266,7 @@ var Resume = React.createClass({
           <div className="resume-section">
             <h2>skills</h2>
             <div className="resume-item">
-              <span className="resume-info">JavaScript, React, React Native, jQuery, Canvas, Backbone.js, Underscore.js, HTML, CSS, Ruby, Ruby on Rails, PostgreSQL, SQL, C#, .net</span>
+              <span className="resume-info">JavaScript | React | React Native | jQuery | Canvas | Backbone.js | Underscore.js | HTML | CSS | Ruby | Rails | PostgreSQL | SQL | C# | .net | Interviewing | Writing | Producing | Editing</span>
             </div>
           </div>
         </div>
