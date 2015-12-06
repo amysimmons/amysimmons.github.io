@@ -305,9 +305,6 @@ var Resume = React.createClass({
             </div>
           </div>
         </div>
-        <div className="resume-download">
-          <a className="resume-download-link" href="/files/Amy-Simmons-Resume-April-2015.pdf" download>Download</a>
-        </div>
       </div>
     )
   }
