@@ -86,16 +86,19 @@ h2{
   /*font-size: 50px;*/
   font-size: 2em;
   font-family: 'Lato', sans-serif;
+  font-weight: 800;
 }
 
 h3 {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 30px;
+  font-weight: bold;
 }
 
-.hide {
-  display: none;
+.project:not(:last-child) {
+  padding-bottom: 10%;
+  border-bottom: 2px solid lightgrey;
 }
 
 .project, .code-flower-container {
@@ -222,6 +225,7 @@ h3 {
 }
 
 .resume-download {
+  margin-top: 10%;
   text-align: center;
 }
 
