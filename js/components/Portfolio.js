@@ -8,7 +8,7 @@ var Header = React.createClass({
             <li className="nav-li"><i className="fa fa-home nav-icon"></i><a href="#/" className="nav-link home-link">home</a></li>
             <li className="nav-li"><i className="fa fa-laptop nav-icon"></i><a href="#/projects" className="nav-link projects-link">projects</a></li>
             <li className="nav-li"><i className="fa fa-info nav-icon"></i><a href="#/about" className="nav-link about-link">about</a></li>
-            <li className="nav-li"><i className="fa fa-envelope nav-icon"></i><a href="#/resume" className="nav-link resume-link">resume</a></li>
+            <li className="nav-li"><i className="fa fa-file-o nav-icon"></i><a href="#/resume" className="nav-link resume-link">resume</a></li>
             <li className="nav-li"><i className="fa fa-code nav-icon"></i><a href="#/just-for-fun" className="nav-link fun-link">just for fun</a></li>
           </ul>
         </nav>
@@ -38,14 +38,31 @@ var Home = React.createClass({
 var Project = React.createClass({
   render () {
     var project = this.props.project;
+
+    var links = [];
+
+    if (project.site != ""){
+      links.push(
+        <a href={project.site} className="project-link">View site</a>
+      )
+    }
+    if(project.code != ""){
+      links.push(
+        <a href={project.code} className="project-link">View code</a>
+      )
+    }
+    if(project.flower != ""){
+      links.push(
+        <a href={project.flower} className="project-link">Code flower</a>
+      )
+    }
+
     return (
      <div className="project">
         <h3>{project.title}</h3>
         <p className="project-desc">{project.description}</p>
         <div className="technologies">{project.technologies}</div>
-        <a href={project.site} className="project-link">View site</a> 
-        <a href={project.code} className="project-link">View code</a>
-        <a href={project.flower} className="project-link">Code flower</a>
+        {links}
         <img className="project-image" src={project.image} alt={project.imageAltText}></img>
       </div>
     );
