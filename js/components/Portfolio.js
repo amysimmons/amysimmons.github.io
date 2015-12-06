@@ -63,7 +63,7 @@ var Project = React.createClass({
         <p className="project-desc">{project.description}</p>
         <div className="technologies">{project.technologies}</div>
         {links}
-        <img className="project-image" src={project.image} alt={project.imageAltText}></img>
+        <img className={project.classes} src={project.image} alt={project.imageAltText}></img>
       </div>
     );
   },
@@ -80,7 +80,8 @@ var Projects = React.createClass({
       code: "https://github.com/amysimmons/a-guide-to-the-care-and-feeding-of-new-devs",
       flower: "",
       image: "project-images/new-devs-guide.png",
-      imageAltText: "A guide to the care and feeding of new devs"
+      imageAltText: "A guide to the care and feeding of new devs",
+      classes: "project-image"
     },
     {
       title: "JavaScript Study Group: 6 apps in 10 weeks",
@@ -89,8 +90,9 @@ var Projects = React.createClass({
       site: "http://www.meetup.com/Sydney-JavaScript-Study-Group/about/",
       code: "https://github.com/amysimmons/js-study-group",
       flower: "",
-      image: "project-images/js-study-group.png",
-      imageAltText: "JavaScript Study Group: 6 apps in 10 weeks"
+      image: "project-images/minesweeper.png",
+      imageAltText: "JavaScript Study Group: 6 apps in 10 weeks",
+      classes: "iphone"
     },
     {
       title: "Rails Girls Events",
@@ -100,7 +102,8 @@ var Projects = React.createClass({
       code: "https://github.com/amysimmons/rails-girls-events",
       flower: "",
       image: "project-images/rails-girls-events.png",
-      imageAltText: "Rails Girls Events"
+      imageAltText: "Rails Girls Events",
+      classes: "project-image"
     },
     {
       title: "Playa",
@@ -110,7 +113,8 @@ var Projects = React.createClass({
       code: "https://github.com/amysimmons/playa_app",
       flower: "#/just-for-fun",
       image: "project-images/playa.png",
-      imageAltText: "Playa"
+      imageAltText: "Playa",
+      classes: "project-image"
     },
     {
       title: "Sparkr",
@@ -120,7 +124,8 @@ var Projects = React.createClass({
       code: "https://github.com/amysimmons/sparkr_app",
       flower: "#/just-for-fun",
       image: "project-images/sparkr.png",
-      imageAltText: "Sparkr"
+      imageAltText: "Sparkr",
+      classes: "project-image"
     },
     {
       title: "Twitter",
@@ -130,7 +135,8 @@ var Projects = React.createClass({
       code: "https://github.com/amysimmons/twitter",
       flower: "#/just-for-fun",
       image: "project-images/twitter.png",
-      imageAltText: "Twitter"
+      imageAltText: "Twitter",
+      classes: "project-image"
     },
     {
       title: "Faith in Numbers",
@@ -140,7 +146,8 @@ var Projects = React.createClass({
       code: "https://github.com/amysimmons/Faith-in-Numbers",
       flower: "#/just-for-fun",
       image: "project-images/faith-in-numbers.png",
-      imageAltText: "Faith in Numbers"
+      imageAltText: "Faith in Numbers",
+      classes: "project-image"
     },
     {
       title: "Promise Tracker",
@@ -150,15 +157,16 @@ var Projects = React.createClass({
       code: "",
       flower: "",
       image: "project-images/promise-tracker.png",
-      imageAltText: "Promise Tracker"
+      imageAltText: "Promise Tracker",
+      classes: "project-image"
     }
     ];
 
     var projects = [];
     for (var i = 0; i < projectsData.length; i++) {
-    var project = projectsData[i];
-    projects.push(<Project key={i} project={project} />)
-  };
+      var project = projectsData[i];
+      projects.push(<Project key={i} project={project} />)
+    };
 
     return (
       <div>
