@@ -198,6 +198,10 @@ var Resume = React.createClass({
           <div className="resume-section">
             <h2>dev life</h2>
             <div className="resume-item">
+              <span className="resume-date">April 2015 to now:</span>
+              <span className="resume-info">Developer, ansarada</span>
+            </div>
+            <div className="resume-item">
               <span className="resume-date">December 2015:</span>
               <span className="resume-info">YOW! conference</span>
             </div>
@@ -240,10 +244,6 @@ var Resume = React.createClass({
             <div className="resume-item">
               <span className="resume-date">May 2015:</span>
               <span className="resume-info">SheHacks hackathon</span>
-            </div>
-            <div className="resume-item">
-              <span className="resume-date">April 2015 to now:</span>
-              <span className="resume-info">Developer, ansarada</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">March 2015:</span>
