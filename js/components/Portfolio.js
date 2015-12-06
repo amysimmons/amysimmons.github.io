@@ -152,7 +152,11 @@ var Resume = React.createClass({
             <h3>AMY SIMMONS</h3>
             <div className="resume-item">
               <span className="resume-info">
-                +61 404 925 905 | @amesimmons | amysimmons.github.io | amysimmons.abc@gmail.com
+                <span className="fa fa-phone">+61 404 925 905</span>
+                <a className="fa fa-envelope-o" href="mailto:amysimmons.abc@gmail.com">amysimmons.abc@gmail.com</a>
+                <a className="fa fa-github" href="https://github.com/amysimmons">amysimmons.github.io</a>
+                <a className="fa fa-twitter" href="https://twitter.com/amesimmons">@amesimmons</a>
+                <a className="fa fa-linkedin" href="https://au.linkedin.com/in/amesimmons">linkedin.com/in/amesimmons</a>
               </span>
             </div>
           </div>
@@ -203,6 +207,10 @@ var Resume = React.createClass({
               <span className="resume-info">SheHacks hackathon</span>
             </div>
             <div className="resume-item">
+              <span className="resume-date">April 2015 to now:</span>
+              <span className="resume-info">Developer, ansarada</span>
+            </div>
+            <div className="resume-item">
               <span className="resume-date">March 2015:</span>
               <span className="resume-info">Rails Girls Mentor</span>
             </div>
@@ -210,11 +218,7 @@ var Resume = React.createClass({
         </div>
         <div className="resume-col-2">
           <div className="resume-section">
-            <h2>employment history</h2>
-            <div className="resume-item">
-              <span className="resume-date">April 2015 to now:</span>
-              <span className="resume-info">Developer, ansarada</span>
-            </div>
+            <h2>journo life</h2>
             <div className="resume-item">
               <span className="resume-date">January 2009 to December 2014: </span>
               <span className="resume-info">Journalist/Digital Producer, Australian Broadcasting Corporation
@@ -222,7 +226,7 @@ var Resume = React.createClass({
             </div>
             <div className="resume-item">
               <span className="resume-achievement">Achievement:</span>
-                <span className="resume-info">Nnominated for a Walkley Award for Excellence in Multimedia Storytelling for producing the Promise Tracker – an interactive data visualisation project, which I led for 12 months.
+              <span className="resume-info">Nnominated for a Walkley Award for Excellence in Multimedia Storytelling for producing the Promise Tracker – an interactive data visualisation project, which I led for 12 months.
               </span>
             </div>
           </div>
@@ -438,7 +442,7 @@ ReactDOM.render(
 );
 
 var showNavMenu = function(){
-$('nav ul').toggleClass('show-menu');
+  $('nav ul').toggleClass('show-menu');
 };
 
 $('.hamburger').on('click', showNavMenu);
