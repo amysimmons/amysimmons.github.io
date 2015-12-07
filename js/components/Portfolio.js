@@ -329,7 +329,7 @@ var About = React.createClass({
           <p>During the course I worked the hardest I’ve ever worked, and I loved every minute of it.</p>
           <p>I graduated in April and received my first full-time developer job, with an amazing company called <a href="https://www.ansarada.com/">ansarada</a>.</p>
           <p>Now that I&#39;m a developer, I&#39;ve realised the feeling of having "so much to learn" will never go away. It&#39;s overwhelming, but equally exciting.</p>
-          <p>2015 has been the best year of my life, and that&#39;s all because I took the plunge and learnt to code.</p>
+          <p>2015 has been the best year of my life, and that&#39;s all because I learnt to code.</p>
           <p>You can hear more about my journey from journalism to dev in my <a href="http://www.codenewbie.org/podcast/from-journalist-to-developer">CodeNewbie podcast interview</a> and <a href="https://www.youtube.com/watch?v=ljrvFZCuzN4&app=desktop">SydCSS talk</a>.</p>
         </div>
       </div>
