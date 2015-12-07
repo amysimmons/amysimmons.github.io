@@ -67,7 +67,7 @@ nav a:hover {
 }
 
 .name {
-  font-size: 4.5em;
+  font-size: 4em;
   text-align: center;
   color: #fff;
   font-weight: 400;
@@ -313,7 +313,7 @@ line.link {
 @media screen and (max-width: 767px){
 
   .name {
-      font-size: 2.5em;
+      font-size: 2em;
   }
 
   .resume-download-link{
