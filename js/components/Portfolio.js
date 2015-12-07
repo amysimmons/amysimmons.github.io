@@ -223,7 +223,7 @@ var Resume = React.createClass({
             </div>  
             <div className="resume-item">
               <span className="resume-date">October 2015:</span>
-              <span className="resume-info">Code Newbies podcast</span>
+              <span className="resume-info">CodeNewbie podcast</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">September to December 2015:</span>
@@ -318,7 +318,7 @@ var About = React.createClass({
         <img className="profile" src="images/profile-pic.jpg" alt="Amy Simmons"></img>
         <div className="about-content">
           <p>I started my career in 2009 as a journalist/producer with <a href="http://www.abc.net.au/news/">ABC News Online</a> in Brisbane.</p>
-          <p>From 4:30am to 1:00am, seven days a week, we covered major national and internationl news stories.</p>
+          <p>From 4:30 am to 1:00 am, seven days a week, we covered major national and international news stories.</p>
           <p>A few years later I made the move to Sydney, and began working in the ABC&#39;s <a href="http://www.abc.net.au/news/factcheck/">Fact Checking Unit</a>. The unit held politicians to account - testing their claims through in-depth, rigorous research.</p>
           <p>This was the role that sparked my interest in coding. I wanted to tell stories in new and interesting ways, but didn&#39;t have the technical skills.</p>
           <p>I wrote my first line of code in November 2013, at a two-day <a href="http://railsgirls.com/sydney">Rails Girls</a> workshop. From that moment I was hooked, and I needed to learn more.</p>
@@ -412,7 +412,7 @@ var JustForFun = React.createClass({
         <h2>Just for fun</h2>
         <div className="code-flower-container">
           <h3>Code flowers</h3>
-          <p>Each disc represents a file, with a radius proportional to the number of lines of code. Source: Via <a href="http://www.redotheweb.com/CodeFlower/">François Zaninotto</a>, built with D3js.</p>
+          <p>Each disc represents a file, with a radius proportional to the number of lines of code. Source: Via <a href="http://www.redotheweb.com/CodeFlower/">François Zaninotto</a>, built with D3.</p>
           <div className="code-flower">
             <h4>Playa</h4>
             <div id="playa-visualisation"></div>
