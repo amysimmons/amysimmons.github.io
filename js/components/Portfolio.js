@@ -139,6 +139,17 @@ var Projects = React.createClass({
       classes: "project-image"
     },
     {
+      title: "Why online journalists should learn to code",
+      description: "I interviewed journalists from around the world on why it's important for online journalists to learn to code, and built this website to showcase their reasons.",
+      technologies: "HTML | CSS",
+      site: "http://why-online-journalists-should-learn-to-code.bitballoon.com/",
+      code: "https://github.com/amysimmons/Unicorns",
+      flower: "",
+      image: "project-images/unicorns.png",
+      imageAltText: "Why online journalists should learn to code",
+      classes: "project-image"
+    },
+    {
       title: "Faith in Numbers",
       description: "I built this website in March 2014 as my final project in General Assembly’s Front-End Web Development course. It was my first time using D3.",
       technologies: "JavaScript | jQuery | D3 | HTML | CSS",
