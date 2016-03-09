@@ -73,6 +73,28 @@ var Projects = React.createClass({
   render (){
     var projectsData = [
       {
+      title: "Mosaic generator",
+      description: "In March 2016 I built a mosaic generator. It takes a user uploaded photo and returns a mosaic one row at a time.",
+      technologies: "JavaScript | HTML | CSS",
+      site: "",
+      code: "https://github.com/amysimmons/mosaic",
+      flower: "",
+      image: "project-images/swift-mosaic.png",
+      imageAltText: "Mosaic image of Taylor Swift",
+      classes: "project-image"
+      },
+      {
+      title: "Unlucky Monkey",
+      description: "I built Unlucky Monkey in January 2016 ahead of Lunar New Year. It allows people around the world to create fortune cookies to be opened by complete strangers.",
+      technologies: "Ruby on Rails | HTML | CSS",
+      site: "https://unlucky-monkey.herokuapp.com/",
+      code: "https://github.com/amysimmons/fortune-cookie",
+      flower: "",
+      image: "project-images/unlucky-monkey.png",
+      imageAltText: "Unlucky Monkey",
+      classes: "project-image"
+      },
+      {
       title: "A guide to the care and feeding of new devs",
       description: "In November 2015 I interviewed junior web developers to find out how they could be better supported in the workplace. This website outlines my findings.",
       technologies: "React | JavaScript | HTML | CSS",
