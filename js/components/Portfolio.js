@@ -232,7 +232,19 @@ var Resume = React.createClass({
             <h2>dev life</h2>
             <div className="resume-item">
               <span className="resume-date">April 2015 to now:</span>
-              <span className="resume-info">Developer, ansarada</span>
+              <span className="resume-info">Developer, <a href="https://www.ansarada.com/">ansarada</a></span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">April 2016:</span>
+              <span className="resume-info">Rails Girls Next mentor</span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">March 2016:</span>
+              <span className="resume-info">Ruby on Rails Oceania Sydney talk</span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">January 2016:</span>
+              <span className="resume-info">SydJS talk</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">December 2015:</span>
@@ -244,7 +256,7 @@ var Resume = React.createClass({
             </div>
             <div className="resume-item">
               <span className="resume-date">November 2015:</span>
-              <span className="resume-info">CampJS talk</span>
+              <span className="resume-info"><a href="https://vimeo.com/154932127">CampJS talk</a></span>
             </div>  
             <div className="resume-item">
               <span className="resume-date">October 2015:</span>
@@ -256,15 +268,15 @@ var Resume = React.createClass({
             </div>  
             <div className="resume-item">
               <span className="resume-date">October 2015:</span>
-              <span className="resume-info">CodeNewbie podcast</span>
+              <span className="resume-info"><a href="http://www.codenewbie.org/podcast/from-journalist-to-developer">CodeNewbie podcast</a></span>
             </div>
             <div className="resume-item">
               <span className="resume-date">September to December 2015:</span>
-              <span className="resume-info">JavaScript Study Group organiser, host and attendee</span>
+              <span className="resume-info"><a href="http://www.meetup.com/Sydney-JavaScript-Study-Group/">JavaScript Study Group</a> organiser, host and attendee</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">August 2015:</span>
-              <span className="resume-info">Rails Girls organiser and host</span>
+              <span className="resume-info"><a href="http://www.railsgirls.com">Rails Girls</a> organiser and host</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">June 2015:</span>
@@ -272,7 +284,7 @@ var Resume = React.createClass({
             </div>
             <div className="resume-item">
               <span className="resume-date">June 2015:</span>
-              <span className="resume-info">SydCSS talk</span>
+              <span className="resume-info"><a href="https://www.youtube.com/watch?v=ljrvFZCuzN4&app=desktop">SydCSS talk</a></span>
             </div>
             <div className="resume-item">
               <span className="resume-date">May 2015:</span>
@@ -280,7 +292,7 @@ var Resume = React.createClass({
             </div>
             <div className="resume-item">
               <span className="resume-date">March 2015:</span>
-              <span className="resume-info">Rails Girls mentor</span>
+              <span className="resume-info">Rails Girls Beginner mentor</span>
             </div>
           </div>
         </div>
@@ -289,12 +301,12 @@ var Resume = React.createClass({
             <h2>journo life</h2>
             <div className="resume-item">
               <span className="resume-date">January 2009 to December 2014: </span>
-              <span className="resume-info">Journalist/Digital Producer, Australian Broadcasting Corporation
+              <span className="resume-info">Journalist/Digital Producer, <a href="http://www.abc.net.au/news/">Australian Broadcasting Corporation</a>
               </span>
             </div>
             <div className="resume-item">
               <span className="resume-achievement">Achievement:</span>
-              <span className="resume-info">Nominated for a Walkley Award for Excellence in Multimedia Storytelling for producing the Promise Tracker – an interactive data visualisation project, which I led for 12 months.
+              <span className="resume-info">Nominated for a <a href="http://www.walkleys.com/">Walkley Award</a> for Excellence in Multimedia Storytelling for producing the <a href="http://www.abc.net.au/news/factcheck/promisetracker/">Promise Tracker</a> – an interactive data visualisation project, which I led for 12 months.
               </span>
             </div>
           </div>
@@ -302,27 +314,26 @@ var Resume = React.createClass({
             <h2>education</h2>
             <div className="resume-item">
               <span className="resume-date">April to June 2015:</span>
-              <span className="resume-info">ThoughtWorks LevelUp program
+              <span className="resume-info">ThoughtWorks <a href="http://levelup.thoughtworks.com/">LevelUp</a> program
               </span>
             </div>
             <div className="resume-item">
               <span className="resume-date">January to April 2015: </span>
-              <span className="resume-info">Web Development Immersive, General Assembly
+              <span className="resume-info"><a href="https://generalassemb.ly/education/web-development-immersive">Web Development Immersive</a>, General Assembly
               </span>
             </div>
             <div className="resume-item">
               <span className="resume-date">July 2014:</span>
-              <span className="resume-info">Rails Girls Next
+              <span className="resume-info">Rails Girls Next attendee
               </span>
             </div>
             <div className="resume-item">
               <span className="resume-date">January to March 2014: </span>
-              <span className="resume-info">  Front-End Web Development, General Assembly 
-              </span>
+              <span className="resume-info"><a href="https://generalassemb.ly/education/front-end-web-development">Front-End Web Development</a>, General Assembly</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">November 2013:</span>
-              <span className="resume-info">Rails Girls Beginner 
+              <span className="resume-info">Rails Girls Beginner attendee
               </span>
             </div>
             <div className="resume-item">
@@ -334,7 +345,16 @@ var Resume = React.createClass({
           <div className="resume-section">
             <h2>skills</h2>
             <div className="resume-item">
-              <span className="resume-info">JavaScript | React | React Native | jQuery | Canvas | Backbone | Underscore | HTML | CSS | Ruby | Rails | PostgreSQL | SQL | C# | .net | Interviewing | Writing | Producing | Editing</span>
+              <span className="resume-info">JavaScript | React | React Native | jQuery | Canvas | Backbone | Underscore | HTML | CSS</span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-info">Ruby | Rails | C# | .net | VisualStudio | SQL | Git</span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-info">Agile practices | Test-driven development | Microservices architecture | Domain-driven design</span>
+            </div>
+            <div className="resume-item"> 
+              <span className="resume-info">Interviewing | Writing | Producing | Editing</span>
             </div>
           </div>
         </div>
@@ -362,8 +382,8 @@ var About = React.createClass({
           <p>During the course I worked the hardest I’ve ever worked, and I loved every minute of it.</p>
           <p>I graduated in April and received my first full-time developer job, with an amazing company called <a href="https://www.ansarada.com/">ansarada</a>.</p>
           <p>Now that I&#39;m a developer, I&#39;ve realised the feeling of having "so much to learn" will never go away. It&#39;s overwhelming, but equally exciting.</p>
-          <p>2015 has been the best year of my life, and that&#39;s all because I learnt to code.</p>
-          <p>You can hear more about my journey from journalism to dev in my <a href="http://www.codenewbie.org/podcast/from-journalist-to-developer">CodeNewbie podcast interview</a> and <a href="https://www.youtube.com/watch?v=ljrvFZCuzN4&app=desktop">SydCSS talk</a>.</p>
+          <p>2015 was the best year of my life, and that&#39;s all because I learnt to code.</p>
+          <p>You can hear more about my journey from journalism to dev in my <a href="http://www.codenewbie.org/podcast/from-journalist-to-developer">CodeNewbie podcast interview</a>, <a href="http://www.sbs.com.au/news/article/2016/02/29/women-succeeding-increasingly-male-dominated-it-industry">SBS News interview</a> and <a href="https://www.youtube.com/watch?v=ljrvFZCuzN4&app=desktop">SydCSS talk</a>.</p>
         </div>
       </div>
     )
