@@ -20,7 +20,7 @@ var Header = React.createClass({
 var Home = React.createClass({
   render (){
     return (
-      
+
         <div className="section" id="home">
           <h1 className="name">Hi! I&#39;m <span className="highlight">Amy</span>, a full-stack <span className="highlight">web developer</span> in <span className="highlight">Sydney</span>, Australia.</h1>
           <div id="social-icons">
@@ -30,7 +30,7 @@ var Home = React.createClass({
             <a className="fa fa-linkedin" href="https://au.linkedin.com/in/amesimmons"></a>
           </div>
         </div>
-    
+
     )
   }
 });
@@ -72,6 +72,17 @@ var Project = React.createClass({
 var Projects = React.createClass({
   render (){
     var projectsData = [
+      {
+      title: "In a Giphy",
+      description: "Over the Easter long weekend in 2016 I travelled to Hong Kong with two girlfriends. On the flight I started building the game Memory. I use the Giphy API as a source for the cards.",
+      technologies: "JavaScript | jQuery |  Node | Express | HTML | CSS",
+      site: "http://amysimmons.github.io/memory/",
+      code: "https://github.com/amysimmons/memory",
+      flower: "",
+      image: "project-images/memory.png",
+      imageAltText: "Memory card game",
+      classes: "project-image"
+      },
       {
       title: "Mosaic generator",
       description: "In March 2016 I built a mosaic generator. It takes a user uploaded photo and returns a mosaic one row at a time.",
@@ -223,7 +234,7 @@ var Resume = React.createClass({
                 <a className="fa fa-envelope-o" href="mailto:amysimmons.abc@gmail.com"></a>
                 <a className="fa fa-github" href="https://github.com/amysimmons"></a>
                 <a className="fa fa-twitter" href="https://twitter.com/amesimmons"></a>
-                <a className="fa fa-linkedin" href="https://au.linkedin.com/in/amesimmons"></a><br/> 
+                <a className="fa fa-linkedin" href="https://au.linkedin.com/in/amesimmons"></a><br/>
                 <span>0404 925 905</span>
               </span>
             </div>
@@ -257,15 +268,15 @@ var Resume = React.createClass({
             <div className="resume-item">
               <span className="resume-date">November 2015:</span>
               <span className="resume-info"><a href="https://vimeo.com/154932127">CampJS talk</a></span>
-            </div>  
+            </div>
             <div className="resume-item">
               <span className="resume-date">October 2015:</span>
               <span className="resume-info">Web Directions conference</span>
-            </div>  
+            </div>
             <div className="resume-item">
               <span className="resume-date">October 2015:</span>
               <span className="resume-info">Product Hunt Sydney talk</span>
-            </div>  
+            </div>
             <div className="resume-item">
               <span className="resume-date">October 2015:</span>
               <span className="resume-info"><a href="http://www.codenewbie.org/podcast/from-journalist-to-developer">CodeNewbie podcast</a></span>
@@ -353,7 +364,7 @@ var Resume = React.createClass({
             <div className="resume-item">
               <span className="resume-info">Agile practices | Test-driven development | Microservices architecture | Domain-driven design</span>
             </div>
-            <div className="resume-item"> 
+            <div className="resume-item">
               <span className="resume-info">Interviewing | Writing | Producing | Editing</span>
             </div>
           </div>
@@ -473,7 +484,7 @@ var JustForFun = React.createClass({
           </div>
           <div className="code-flower">
             <h4>Sparkr</h4>
-            <div id="sparkr-visualisation"></div> 
+            <div id="sparkr-visualisation"></div>
           </div>
           <div className="code-flower">
             <h4>Twitter</h4>
@@ -489,7 +500,7 @@ var JustForFun = React.createClass({
   }
 });
 
-var Portfolio = React.createClass({ 
+var Portfolio = React.createClass({
   getInitialState() {
       return {
         route: window.location.hash.substr(1)
