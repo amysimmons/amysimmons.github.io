@@ -246,6 +246,10 @@ var Resume = React.createClass({
               <span className="resume-info">Developer, <a href="https://www.ansarada.com/">ansarada</a></span>
             </div>
             <div className="resume-item">
+              <span className="resume-date">May 2016:</span>
+              <span className="resume-info"><a href="https://generalassemb.ly/education/javascript-development">JavaScript Development</a> TA at General Assembly</span>
+            </div>
+            <div className="resume-item">
               <span className="resume-date">April 2016:</span>
               <span className="resume-info">Rails Girls Next mentor</span>
             </div>
@@ -356,13 +360,13 @@ var Resume = React.createClass({
           <div className="resume-section">
             <h2>skills</h2>
             <div className="resume-item">
-              <span className="resume-info">JavaScript | React | React Native | jQuery | Canvas | Backbone | Underscore | HTML | CSS</span>
+              <span className="resume-info">JavaScript | React | React Native | Node | jQuery | Canvas | Backbone | Underscore | HTML | CSS</span>
             </div>
             <div className="resume-item">
               <span className="resume-info">Ruby | Rails | C# | .net | VisualStudio | SQL | Git</span>
             </div>
             <div className="resume-item">
-              <span className="resume-info">Agile practices | Test-driven development | Microservices architecture | Domain-driven design</span>
+              <span className="resume-info">Agile practices | Test-driven development | Microservices architecture | OOP</span>
             </div>
             <div className="resume-item">
               <span className="resume-info">Interviewing | Writing | Producing | Editing</span>
