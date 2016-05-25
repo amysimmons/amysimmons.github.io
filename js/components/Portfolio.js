@@ -247,6 +247,7 @@ var Resume = React.createClass({
             </div>
             <div className="resume-item">
               <span className="resume-date">May 2016:</span>
+
               <span className="resume-info"><a href="https://generalassemb.ly/education/javascript-development">JavaScript Development</a> TA at General Assembly</span>
             </div>
             <div className="resume-item">
