@@ -394,32 +394,62 @@ var About = React.createClass({
 
 var Blog = React.createClass({
   render (){
-
     var posts = [
       {url: '2016-08-10-first-blog', title: 'hey girl'},
       {url: '2016-08-09-second-blog', title: 'hey boy'}
     ]
 
+    var selectedPostPath = this.props.selectedPostPath
+    var setSelectedPostPath = this.props.setSelectedPostPath
+    var selectedPost = [];
+
     posts.forEach(function(post, index){
-       posts[index] = <Post key={index} post={post}/>
+       posts[index] = <Post key={index} post={post} setSelectedPostPath={setSelectedPostPath}/>
     })
 
-    return (
-      <div className="section" id="blog">
-        <h2>Blog</h2>
-        {posts}
-      </div>
-    )
+    debugger
+
+    if(selectedPostPath != null){
+      debugger
+      selectedPost = posts.filter(function(post){
+        if(post.url == selectedPostPath){
+          return <Post key={100} post={post} setSelectedPostPath={setSelectedPostPath}/>
+        }
+      })
+    }
+
+console.log('selectedPost', selectedPost)
+
+
+    if(selectedPostPath == null){
+      return (
+        <div className="section" id="blog">
+          <h2>Blog</h2>
+          {posts}
+        </div>
+      )
+
+    }else {
+      return (
+        <div className="section" id="blog">
+          {selectedPost}
+        </div>
+      )
+
+    }
+
   }
 });
 
 var Post = React.createClass({
   render () {
     var post = this.props.post;
+    var setSelectedPostPath = this.props.setSelectedPostPath
 
     var handleClick = function(event){
       event.preventDefault();
       window.location = window.location.hash + '/' + event.currentTarget.attributes['data-id'].value
+      setSelectedPostPath(event.currentTarget.attributes['data-id'].value)
     }
 
     return (
@@ -545,6 +575,12 @@ var Portfolio = React.createClass({
     })
   },
 
+  setSelectedPostPath(selectedPostPath){
+    this.setState({
+      selectedPostPath: selectedPostPath
+    })
+  },
+
   render() {
     switch (this.state.route) {
       case '/': $('body').css('background-color', '#FFD10F'); break;
@@ -571,7 +607,9 @@ var Portfolio = React.createClass({
       <div className="container">
         <Header />
         <div className="content-container" id="content-container">
-          <Child/>
+          <Child 
+          setSelectedPostPath={this.setSelectedPostPath} 
+          selectedPostPath={this.state.selectedPostPath}/>
         </div>
       </div>
     )
