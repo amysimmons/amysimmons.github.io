@@ -8,6 +8,7 @@ var Header = React.createClass({
             <li className="nav-li"><i className="fa fa-home nav-icon"></i><a href="#/" className="nav-link home-link">home</a></li>
             <li className="nav-li"><i className="fa fa-laptop nav-icon"></i><a href="#/projects" className="nav-link projects-link">projects</a></li>
             <li className="nav-li"><i className="fa fa-info nav-icon"></i><a href="#/about" className="nav-link about-link">about</a></li>
+            <li className="nav-li"><i className="fa fa-info nav-icon"></i><a href="#/blog" className="nav-link blog-link">blog</a></li>
             <li className="nav-li"><i className="fa fa-file-o nav-icon"></i><a href="#/resume" className="nav-link resume-link">resume</a></li>
             <li className="nav-li"><i className="fa fa-code nav-icon"></i><a href="#/just-for-fun" className="nav-link fun-link">just for fun</a></li>
           </ul>
@@ -390,6 +391,45 @@ var About = React.createClass({
   }
 });
 
+
+var Blog = React.createClass({
+  render (){
+
+    var posts = [
+      {url: '2016-08-10-first-blog', title: 'hey girl'},
+      {url: '2016-08-09-second-blog', title: 'hey boy'}
+    ]
+
+    posts.forEach(function(post, index){
+       posts[index] = <Post key={index} post={post}/>
+    })
+
+    return (
+      <div className="section" id="blog">
+        <h2>Blog</h2>
+        {posts}
+      </div>
+    )
+  }
+});
+
+var Post = React.createClass({
+  render () {
+    var post = this.props.post;
+
+    var handleClick = function(event){
+      event.preventDefault();
+      window.location = window.location.hash + '/' + event.currentTarget.attributes['data-id'].value
+    }
+
+    return (
+     <div className="post">
+        <a href="" className="post-link" onClick={handleClick} data-id={post.url}><h3>{post.title}</h3></a>
+      </div>
+    );
+  },
+});
+
 var JustForFun = React.createClass({
   render (){
 
@@ -492,7 +532,8 @@ var JustForFun = React.createClass({
 var Portfolio = React.createClass({ 
   getInitialState() {
       return {
-        route: window.location.hash.substr(1)
+        route: window.location.hash.substr(1),
+        selectedPostPath: null
       }
   },
 
@@ -509,6 +550,8 @@ var Portfolio = React.createClass({
       case '/': $('body').css('background-color', '#FFD10F'); break;
       case '/projects': $('body').css('background-color', '#fff'); break;
       case '/about': $('body').css('background-color', '#fff'); break;
+      case '/blog': $('body').css('background-color', '#fff'); break;
+      case '/blog/' + this.state.selectedPostPath: $('body').css('background-color', '#fff'); break;
       case '/resume': $('body').css('background-color', '#fff'); break;
       case '/just-for-fun': $('body').css('background-color', '#fff'); break;
     }
@@ -517,6 +560,8 @@ var Portfolio = React.createClass({
     switch (this.state.route) {
       case '/projects': Child = Projects; break;
       case '/about': Child = About; break;
+      case '/blog': Child = Blog; break;
+      case '/blog/' + this.state.selectedPostPath: Child = Blog; break;
       case '/resume': Child = Resume; break;
       case '/just-for-fun': Child = JustForFun; break;
       default:      Child = Home;
