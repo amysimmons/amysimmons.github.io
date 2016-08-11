@@ -554,7 +554,7 @@ var Portfolio = React.createClass({
   getInitialState() {
       return {
         route: window.location.hash.substr(1),
-        selectedPostPath: null,
+        selectedPostPath: window.location.hash.split('/')[2] || null,
         posts: [
           {url: '2016-08-10-first-blog', title: 'hey girl'},
           {url: '2016-08-09-second-blog', title: 'hey boy'}
