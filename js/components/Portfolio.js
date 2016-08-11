@@ -394,54 +394,25 @@ var About = React.createClass({
 
 var Blog = React.createClass({
   render (){
-    var posts = [
-      {url: '2016-08-10-first-blog', title: 'hey girl'},
-      {url: '2016-08-09-second-blog', title: 'hey boy'}
-    ]
-
+    var posts = this.props.posts
+    var postComponents = []
     var selectedPostPath = this.props.selectedPostPath
     var setSelectedPostPath = this.props.setSelectedPostPath
-    var selectedPost = [];
 
     posts.forEach(function(post, index){
-       posts[index] = <Post key={index} post={post} setSelectedPostPath={setSelectedPostPath}/>
+       postComponents[index] = <PostShort key={index} post={post} setSelectedPostPath={setSelectedPostPath}/>
     })
 
-    debugger
-
-    if(selectedPostPath != null){
-      debugger
-      selectedPost = posts.filter(function(post){
-        if(post.url == selectedPostPath){
-          return <Post key={100} post={post} setSelectedPostPath={setSelectedPostPath}/>
-        }
-      })
-    }
-
-console.log('selectedPost', selectedPost)
-
-
-    if(selectedPostPath == null){
-      return (
-        <div className="section" id="blog">
-          <h2>Blog</h2>
-          {posts}
-        </div>
-      )
-
-    }else {
-      return (
-        <div className="section" id="blog">
-          {selectedPost}
-        </div>
-      )
-
-    }
-
+    return (
+      <div className="section" id="blog">
+        <h2>Blog</h2>
+        {postComponents}
+      </div>
+    )
   }
 });
 
-var Post = React.createClass({
+var PostShort = React.createClass({
   render () {
     var post = this.props.post;
     var setSelectedPostPath = this.props.setSelectedPostPath
@@ -455,6 +426,26 @@ var Post = React.createClass({
     return (
      <div className="post">
         <a href="" className="post-link" onClick={handleClick} data-id={post.url}><h3>{post.title}</h3></a>
+      </div>
+    );
+  },
+});
+
+var PostLong = React.createClass({
+  render () {
+    var posts = this.props.posts;
+    var selectedPostPath = this.props.selectedPostPath
+
+    var selectedPost = posts.filter(function(post){
+      if(post.url == selectedPostPath){
+        return post
+      }
+    })
+
+    return (
+     <div className="post-long">
+        <p>{selectedPost[0].url}</p>
+        <p>{selectedPost[0].title}</p>
       </div>
     );
   },
@@ -563,14 +554,18 @@ var Portfolio = React.createClass({
   getInitialState() {
       return {
         route: window.location.hash.substr(1),
-        selectedPostPath: null
+        selectedPostPath: null,
+        posts: [
+          {url: '2016-08-10-first-blog', title: 'hey girl'},
+          {url: '2016-08-09-second-blog', title: 'hey boy'}
+        ]
       }
   },
 
   componentDidMount() {
     window.addEventListener('hashchange', () => {
       this.setState({
-        route: window.location.hash.substr(1)
+        route: window.location.hash.substr(1)      
       })
     })
   },
@@ -597,7 +592,7 @@ var Portfolio = React.createClass({
       case '/projects': Child = Projects; break;
       case '/about': Child = About; break;
       case '/blog': Child = Blog; break;
-      case '/blog/' + this.state.selectedPostPath: Child = Blog; break;
+      case '/blog/' + this.state.selectedPostPath: Child = PostLong; break;
       case '/resume': Child = Resume; break;
       case '/just-for-fun': Child = JustForFun; break;
       default:      Child = Home;
@@ -609,7 +604,8 @@ var Portfolio = React.createClass({
         <div className="content-container" id="content-container">
           <Child 
           setSelectedPostPath={this.setSelectedPostPath} 
-          selectedPostPath={this.state.selectedPostPath}/>
+          selectedPostPath={this.state.selectedPostPath}
+          posts={this.state.posts}/>
         </div>
       </div>
     )
