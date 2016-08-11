@@ -424,7 +424,7 @@ var PostShort = React.createClass({
     }
 
     return (
-     <div className="post">
+     <div className="post-short">
         <a href="" className="post-link" onClick={handleClick} data-id={post.url}><h3>{post.title}</h3></a>
       </div>
     );
@@ -444,8 +444,11 @@ var PostLong = React.createClass({
 
     return (
      <div className="post-long">
-        <p>{selectedPost[0].url}</p>
-        <p>{selectedPost[0].title}</p>
+        <h2 className="post-title">{selectedPost[0].title}</h2>
+        <p className="post-date">{selectedPost[0].date}</p>
+        <div className="post-content">
+          <p dangerouslySetInnerHTML={{__html: selectedPost[0].content}}></p>
+        </div>
       </div>
     );
   },
@@ -556,7 +559,7 @@ var Portfolio = React.createClass({
         route: window.location.hash.substr(1),
         selectedPostPath: window.location.hash.split('/')[2] || null,
         posts: [
-          {url: '2016-08-10-first-blog', title: 'hey girl'},
+          {url: '2016-08-10-first-blog', date: 'August 12, 2016', title: 'hey girl', content: '<h1>content html test</h1>'},
           {url: '2016-08-09-second-blog', title: 'hey boy'}
         ]
       }
