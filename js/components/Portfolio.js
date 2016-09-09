@@ -22,7 +22,8 @@ var Home = React.createClass({
     return (
 
         <div className="section" id="home">
-          <h1 className="name">Hi! I&#39;m <span className="highlight">Amy</span>, a full-stack <span className="highlight">web developer</span> in <span className="highlight">Sydney</span>, Australia.</h1>
+          <h1 className="name">
+            Hi! I&#39;m <span className="highlight">Amy</span>, a full-stack <span className="highlight">web developer</span> in <span className="strikethrough">Sydney</span> <span className="highlight">London</span>.</h1>
           <div id="social-icons">
             <a className="fa fa-envelope-o" href="mailto:amysimmons.abc@gmail.com"></a>
             <a className="fa fa-github" href="https://github.com/amysimmons"></a>

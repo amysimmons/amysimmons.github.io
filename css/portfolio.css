@@ -77,6 +77,10 @@ nav a:hover {
   font-weight: 800;
 }
 
+.strikethrough {
+  text-decoration: line-through;
+}
+
 h2{
   text-align: center;
   text-transform: uppercase;
@@ -306,7 +310,7 @@ line.link {
 /*tablet*/
 @media screen and (max-width: 1023px){
 
-  
+
 }
 
 /*mobile*/
@@ -319,7 +323,7 @@ line.link {
   .resume-download-link{
     font-size: 0.7em;
   }
-  
+
   .profile {
     width: 60%;
   }
