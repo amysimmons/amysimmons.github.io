@@ -236,56 +236,54 @@ var Resume = React.createClass({
                 <a className="fa fa-github" href="https://github.com/amysimmons"></a>
                 <a className="fa fa-twitter" href="https://twitter.com/amesimmons"></a>
                 <a className="fa fa-linkedin" href="https://au.linkedin.com/in/amesimmons"></a><br/>
-                <span>0404 925 905</span>
               </span>
             </div>
           </div>
           <div className="resume-section">
             <h2>dev life</h2>
             <div className="resume-item">
-              <span className="resume-date">April 2015 to now:</span>
+              <span className="resume-date">September 2016 to now:</span>
+              <span className="resume-info">Software engineer, <a href="https://www.twitter.com/">Twitter</a></span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">April 2015 to August 2016:</span>
               <span className="resume-info">Developer, <a href="https://www.ansarada.com/">ansarada</a></span>
             </div>
             <div className="resume-item">
-              <span className="resume-date">May 2016:</span>
-
-              <span className="resume-info"><a href="https://generalassemb.ly/education/javascript-development">JavaScript Development</a> TA at General Assembly</span>
+              <span className="resume-date">May 2016 to July 2016:</span>
+              <span className="resume-info"><a href="https://generalassemb.ly/education/javascript-development">JavaScript Development</a> teacher&#39;s assistant, General Assembly</span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">July 2016:</span>
+              <span className="resume-info"><a href="https://itunes.apple.com/gb/podcast/tech-women-australia/id1013578561?mt=2">Tech Women Australia</a> podcast interview</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">April 2016:</span>
-              <span className="resume-info">Rails Girls Next mentor</span>
+              <span className="resume-info"><a href="http://www.railsgirls.com">Rails Girls</a> advanced mentor</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">March 2016:</span>
-              <span className="resume-info">Ruby on Rails Oceania Sydney talk</span>
+              <span className="resume-info"><a href="https://www.meetup.com/Ruby-On-Rails-Oceania-Sydney">Ruby on Rails Oceania Sydney</a> talk</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">January 2016:</span>
-              <span className="resume-info">SydJS talk</span>
+              <span className="resume-info"><a href="http://www.sydjs.com/">SydJS</a> talk</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">December 2015:</span>
-              <span className="resume-info">YOW! conference</span>
-            </div>
-            <div className="resume-item">
-              <span className="resume-date">December 2015:</span>
-              <span className="resume-info">Girl Geek Dinner talk</span>
+              <span className="resume-info"><a href="http://www.girlgeeksydney.com/">Girl Geek Dinner</a> talk</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">November 2015:</span>
-              <span className="resume-info"><a href="https://vimeo.com/154932127">CampJS talk</a></span>
+              <span className="resume-info"><a href="https://vimeo.com/154932127">CampJS</a> talk</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">October 2015:</span>
-              <span className="resume-info">Web Directions conference</span>
+              <span className="resume-info"><a href="http://www.meetup.com/Product-Hunt-Sydney/">Product Hunt Sydney</a> talk</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">October 2015:</span>
-              <span className="resume-info">Product Hunt Sydney talk</span>
-            </div>
-            <div className="resume-item">
-              <span className="resume-date">October 2015:</span>
-              <span className="resume-info"><a href="http://www.codenewbie.org/podcast/from-journalist-to-developer">CodeNewbie podcast</a></span>
+              <span className="resume-info"><a href="http://www.codenewbie.org/podcast/from-journalist-to-developer">CodeNewbie</a> podcast interview</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">September to December 2015:</span>
@@ -297,19 +295,19 @@ var Resume = React.createClass({
             </div>
             <div className="resume-item">
               <span className="resume-date">June 2015:</span>
-              <span className="resume-info">Rails Camp</span>
+              <span className="resume-info"><a href="http://railscamps.com/">Rails Camp</a> Sydney attendee</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">June 2015:</span>
-              <span className="resume-info"><a href="https://www.youtube.com/watch?v=ljrvFZCuzN4&app=desktop">SydCSS talk</a></span>
+              <span className="resume-info"><a href="https://www.youtube.com/watch?v=ljrvFZCuzN4&app=desktop">SydCSS</a> talk</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">May 2015:</span>
-              <span className="resume-info">SheHacks hackathon</span>
+              <span className="resume-info"><a href="http://girlgeekacademy.com/shehacks/">SheHacks</a> hackathon</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">March 2015:</span>
-              <span className="resume-info">Rails Girls Beginner mentor</span>
+              <span className="resume-info"><a href="http://www.railsgirls.com">Rails Girls</a> beginner mentor</span>
             </div>
           </div>
         </div>
@@ -329,6 +327,14 @@ var Resume = React.createClass({
           </div>
           <div className="resume-section">
             <h2>education</h2>
+            <div className="resume-item">
+              <span className="resume-date">December 2015:</span>
+              <span className="resume-info"><a href="http://yowconference.com.au/">YOW!</a> conference</span>
+            </div>
+            <div className="resume-item">
+              <span className="resume-date">October 2015:</span>
+              <span className="resume-info"><a href="https://www.webdirections.org/">Web Directions</a> conference</span>
+            </div>
             <div className="resume-item">
               <span className="resume-date">April to June 2015:</span>
               <span className="resume-info">ThoughtWorks <a href="http://levelup.thoughtworks.com/">LevelUp</a> program
@@ -355,7 +361,7 @@ var Resume = React.createClass({
             </div>
             <div className="resume-item">
               <span className="resume-date">2005 to 2008:</span>
-              <span className="resume-info">Bachelor of Journalism & Bachelor of Arts, University of Queensland. I graduated with a GPA of 6 (out of 7). My Arts majors were Religion and Political Science.
+              <span className="resume-info">Bachelor of Journalism & Bachelor of Arts, <a href="http://www.uq.edu.au/">University of Queensland</a>. I graduated with a GPA of 6 (out of 7). My Arts majors were Religion and Political Science.
               </span>
             </div>
           </div>
