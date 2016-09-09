@@ -68,6 +68,17 @@ var Projects = React.createClass({
   render (){
     var projectsData = [
       {
+      title: "Feedr",
+      description: "For 10 weeks in 2016 I was teacher's assistant for a part-time JavaScript Development course with General Assembly. Feedr was one of the projects.",
+      technologies: "ES6",
+      site: "",
+      code: "https://github.com/amysimmons/js1-feedr",
+      image: "project-images/feedr.png",
+      imageAltText: "Feedr",
+      classes: "project-image"
+      },
+
+      {
       title: "In a Giphy",
       description: "Over the Easter long weekend in 2016 I travelled to Hong Kong with two girlfriends. On the flight I started building the game Memory. I use the Giphy API as a source for the cards.",
       technologies: "JavaScript | jQuery |  Node | Express | HTML | CSS",
