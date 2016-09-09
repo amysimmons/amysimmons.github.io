@@ -275,9 +275,13 @@ h3 {
 
 /*mobile*/
 @media screen and (max-width: 767px){
+  .content-container{
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
 
   .name {
-      font-size: 2em;
+    font-size: 2em;
   }
 
   .resume-download-link{
@@ -313,7 +317,6 @@ h3 {
 
   nav ul.show-menu {
     padding-bottom: 1.1em;
-    /*height: auto;*/
     max-height: 160px;
   }
 
