@@ -9,7 +9,6 @@ var Header = React.createClass({
             <li className="nav-li"><i className="fa fa-laptop nav-icon"></i><a href="#/projects" className="nav-link projects-link">projects</a></li>
             <li className="nav-li"><i className="fa fa-info nav-icon"></i><a href="#/about" className="nav-link about-link">about</a></li>
             <li className="nav-li"><i className="fa fa-file-o nav-icon"></i><a href="#/resume" className="nav-link resume-link">resume</a></li>
-            <li className="nav-li"><i className="fa fa-code nav-icon"></i><a href="#/just-for-fun" className="nav-link fun-link">just for fun</a></li>
           </ul>
         </nav>
       </header>
@@ -52,11 +51,6 @@ var Project = React.createClass({
         <a href={project.code} className="project-link">View code</a>
       )
     }
-    if(project.flower != ""){
-      links.push(
-        <a href={project.flower} className="project-link">Code flower</a>
-      )
-    }
 
     return (
      <div className="project">
@@ -79,7 +73,6 @@ var Projects = React.createClass({
       technologies: "JavaScript | jQuery |  Node | Express | HTML | CSS",
       site: "http://amysimmons.github.io/memory/",
       code: "https://github.com/amysimmons/memory",
-      flower: "",
       image: "project-images/memory.png",
       imageAltText: "Memory card game",
       classes: "project-image"
@@ -90,7 +83,6 @@ var Projects = React.createClass({
       technologies: "JavaScript | HTML | CSS",
       site: "",
       code: "https://github.com/amysimmons/mosaic",
-      flower: "",
       image: "project-images/swift-mosaic.png",
       imageAltText: "Mosaic image of Taylor Swift",
       classes: "project-image"
@@ -101,7 +93,6 @@ var Projects = React.createClass({
       technologies: "Ruby on Rails | HTML | CSS",
       site: "https://unlucky-monkey.herokuapp.com/",
       code: "https://github.com/amysimmons/fortune-cookie",
-      flower: "",
       image: "project-images/unlucky-monkey.png",
       imageAltText: "Unlucky Monkey",
       classes: "project-image"
@@ -112,7 +103,6 @@ var Projects = React.createClass({
       technologies: "React | JavaScript | HTML | CSS",
       site: "http://amysimmons.github.io/a-guide-to-the-care-and-feeding-of-new-devs/",
       code: "https://github.com/amysimmons/a-guide-to-the-care-and-feeding-of-new-devs",
-      flower: "",
       image: "project-images/new-devs-guide.png",
       imageAltText: "A guide to the care and feeding of new devs",
       classes: "project-image"
@@ -123,7 +113,6 @@ var Projects = React.createClass({
       technologies: "React | React Native | JavaScript | jQuery | Canvas | HTML | CSS",
       site: "http://www.meetup.com/Sydney-JavaScript-Study-Group/about/",
       code: "https://github.com/amysimmons/js-study-group",
-      flower: "",
       image: "project-images/minesweeper.png",
       imageAltText: "JavaScript Study Group: 6 apps in 10 weeks",
       classes: "iphone"
@@ -134,7 +123,6 @@ var Projects = React.createClass({
       technologies: "Ruby on Rails | JavaScript | jQuery | HTML | CSS",
       site: "http://rails-girls-events.herokuapp.com/",
       code: "https://github.com/amysimmons/rails-girls-events",
-      flower: "",
       image: "project-images/rails-girls-events.png",
       imageAltText: "Rails Girls Events",
       classes: "project-image"
@@ -145,7 +133,6 @@ var Projects = React.createClass({
       technologies: "Ruby on Rails | JavaScript | jQuery | Backbone | Underscore | Ajax | HTML | CSS",
       site: "https://playa-app.herokuapp.com",
       code: "https://github.com/amysimmons/playa_app",
-      flower: "#/just-for-fun",
       image: "project-images/playa.png",
       imageAltText: "Playa",
       classes: "project-image"
@@ -156,7 +143,6 @@ var Projects = React.createClass({
       technologies: "Ruby on Rails | JavaScript | jQuery | Ajax | Handlebars | HTML | CSS",
       site: "http://make-sparks-fly.herokuapp.com/",
       code: "https://github.com/amysimmons/sparkr_app",
-      flower: "#/just-for-fun",
       image: "project-images/sparkr.png",
       imageAltText: "Sparkr",
       classes: "project-image"
@@ -167,7 +153,6 @@ var Projects = React.createClass({
       technologies: "Ruby on Rails | JavaScript | jQuery | HTML | CSS",
       site: "http://twitter-news.herokuapp.com/",
       code: "https://github.com/amysimmons/twitter",
-      flower: "#/just-for-fun",
       image: "project-images/twitter.png",
       imageAltText: "Twitter",
       classes: "project-image"
@@ -178,7 +163,6 @@ var Projects = React.createClass({
       technologies: "HTML | CSS",
       site: "http://why-online-journalists-should-learn-to-code.bitballoon.com/",
       code: "https://github.com/amysimmons/Unicorns",
-      flower: "",
       image: "project-images/unicorns.png",
       imageAltText: "Why online journalists should learn to code",
       classes: "project-image"
@@ -189,7 +173,6 @@ var Projects = React.createClass({
       technologies: "JavaScript | jQuery | D3 | HTML | CSS",
       site: "http://amysimmons.github.io/faith-in-numbers/",
       code: "https://github.com/amysimmons/Faith-in-Numbers",
-      flower: "#/just-for-fun",
       image: "project-images/faith-in-numbers.png",
       imageAltText: "Faith in Numbers",
       classes: "project-image"
@@ -200,7 +183,6 @@ var Projects = React.createClass({
       technologies: "CoreMedia | Keystone.js",
       site: "http://www.abc.net.au/news/factcheck/promisetracker/",
       code: "",
-      flower: "",
       image: "project-images/promise-tracker.png",
       imageAltText: "Promise Tracker",
       classes: "project-image"
@@ -413,105 +395,6 @@ var About = React.createClass({
   }
 });
 
-var JustForFun = React.createClass({
-  render (){
-
-    var windowWidth = $('.content-container').width();
-
-    // Faith in Numbers code flower
-    var finCodeFlower;
-    var createCodeFlower = function(json) {
-      // update the jsonData textarea
-      // document.getElementById('jsonData').innerHTML = JSON.stringify(json);
-      // remove previous flower to save memory
-      if (finCodeFlower) finCodeFlower.cleanup();
-      // adapt layout size to the total number of elements
-      var total = countElements(json);
-      var size = parseInt(Math.sqrt(total) * 30, 10);
-      size = Math.min(size, windowWidth);
-      // create a new CodeFlower
-      finCodeFlower = new CodeFlower("#fin-visualisation", size, size).update(json);
-    };
-    d3.json('js/json/fin.json', createCodeFlower);
-
-    // Sparkr code flower
-    var sparkrCodeFlower;
-    var createCodeFlower = function(json) {
-      // update the jsonData textarea
-      // document.getElementById('jsonData').innerHTML = JSON.stringify(json);
-      // remove previous flower to save memory
-      if (sparkrCodeFlower) sparkrCodeFlower.cleanup();
-      // adapt layout size to the total number of elements
-      var total = countElements(json);
-      var size = parseInt(Math.sqrt(total) * 30, 10) + 150;
-      size = Math.min(size, windowWidth);
-      // create a new CodeFlower
-      sparkrCodeFlower = new CodeFlower("#sparkr-visualisation", size, size).update(json);
-    };
-    d3.json('js/json/sparkr.json', createCodeFlower);
-
-    // Twitter code flower
-    var twitterCodeFlower;
-    var createCodeFlower = function(json) {
-      // update the jsonData textarea
-      // document.getElementById('jsonData').innerHTML = JSON.stringify(json);
-      // remove previous flower to save memory
-      if (twitterCodeFlower) twitterCodeFlower.cleanup();
-      // adapt layout size to the total number of elements
-      var total = countElements(json);
-      var size = parseInt(Math.sqrt(total) * 30, 10) + 150;
-      size = Math.min(size, windowWidth);
-      // create a new CodeFlower
-      twitterCodeFlower = new CodeFlower("#twitter-visualisation", size, size).update(json);
-    };
-    d3.json('js/json/twitter.json', createCodeFlower);
-
-    // Playa code flower
-    var playaCodeFlower;
-    var createCodeFlower = function(json) {
-      // update the jsonData textarea
-      // document.getElementById('jsonData').innerHTML = JSON.stringify(json);
-      // remove previous flower to save memory
-      if (playaCodeFlower) playaCodeFlower.cleanup();
-      // adapt layout size to the total number of elements
-      var total = countElements(json);
-      var size = parseInt(Math.sqrt(total) * 30, 10) + 150;
-      size = Math.min(size, windowWidth);
-      // create a new CodeFlower
-      playaCodeFlower = new CodeFlower("#playa-visualisation", size, size).update(json);
-    };
-    d3.json('js/json/playa.json', createCodeFlower);
-
-
-
-    return (
-      <div className="section" id="just-for-fun">
-        <h2>Just for fun</h2>
-        <div className="code-flower-container">
-          <h3>Code flowers</h3>
-          <p>Each disc represents a file, with a radius proportional to the number of lines of code. Source: Via <a href="http://www.redotheweb.com/CodeFlower/">François Zaninotto</a>, built with D3.</p>
-          <div className="code-flower">
-            <h4>Playa</h4>
-            <div id="playa-visualisation"></div>
-          </div>
-          <div className="code-flower">
-            <h4>Sparkr</h4>
-            <div id="sparkr-visualisation"></div>
-          </div>
-          <div className="code-flower">
-            <h4>Twitter</h4>
-            <div id="twitter-visualisation"></div>
-          </div>
-          <div className="code-flower">
-            <h4>Faith In Numbers</h4>
-            <div id="fin-visualisation"></div>
-          </div>
-        </div>
-      </div>
-    )
-  }
-});
-
 var Portfolio = React.createClass({
   getInitialState() {
       return {
@@ -533,7 +416,6 @@ var Portfolio = React.createClass({
       case '/projects': $('body').css('background-color', '#fff'); break;
       case '/about': $('body').css('background-color', '#fff'); break;
       case '/resume': $('body').css('background-color', '#fff'); break;
-      case '/just-for-fun': $('body').css('background-color', '#fff'); break;
     }
 
     let Child
@@ -541,7 +423,6 @@ var Portfolio = React.createClass({
       case '/projects': Child = Projects; break;
       case '/about': Child = About; break;
       case '/resume': Child = Resume; break;
-      case '/just-for-fun': Child = JustForFun; break;
       default:      Child = Home;
     }
 
