@@ -275,7 +275,7 @@ var Resume = React.createClass({
             </div>
             <div className="resume-item">
               <span className="resume-date">November 2015:</span>
-              <span className="resume-info"><a href="https://vimeo.com/154932127">CampJS</a> talk</span>
+              <span className="resume-info"><a href="https://vimeo.com/154932127">CampJS Brisbane</a> talk</span>
             </div>
             <div className="resume-item">
               <span className="resume-date">October 2015:</span>
@@ -404,9 +404,9 @@ var About = React.createClass({
           <p>I spent the first three months of 2015 transitioning from a journalist/digital producer into a full-stack web developer.</p>
           <p>During the course I worked the hardest I’ve ever worked, and I loved every minute of it.</p>
           <p>I graduated in April and received my first full-time developer job, with an amazing company called <a href="https://www.ansarada.com/">ansarada</a>.</p>
-          <p>Now that I&#39;m a developer, I&#39;ve realised the feeling of having "so much to learn" will never go away. It&#39;s overwhelming, but equally exciting.</p>
-          <p>2015 was the best year of my life, and that&#39;s all because I learnt to code.</p>
-          <p>You can hear more about my journey from journalism to dev in my <a href="http://www.codenewbie.org/podcast/from-journalist-to-developer">CodeNewbie podcast interview</a>, <a href="http://www.sbs.com.au/news/article/2016/02/29/women-succeeding-increasingly-male-dominated-it-industry">SBS News interview</a> and <a href="https://www.youtube.com/watch?v=ljrvFZCuzN4&app=desktop">SydCSS talk</a>.</p>
+          <p>In 2016 I moved to London for a dream job as a software engineer with <a href="https://www.twitter.com/">Twitter</a>.</p>
+          <p>The last couple of years have been the best years of my life, and that&#39;s all because I learnt to code.</p>
+          <p>You can hear more about my journey from journalism to dev in my <a href="https://itunes.apple.com/gb/podcast/tech-women-australia/id1013578561?mt=2">Tech Women Australia podcast interview</a>, <a href="https://vimeo.com/154932127">CampJS Brisbane talk</a>, <a href="http://www.codenewbie.org/podcast/from-journalist-to-developer">CodeNewbie podcast interview</a>, <a href="http://www.sbs.com.au/news/article/2016/02/29/women-succeeding-increasingly-male-dominated-it-industry">SBS News interview</a> and <a href="https://www.youtube.com/watch?v=ljrvFZCuzN4&app=desktop">SydCSS talk</a>.</p>
         </div>
       </div>
     )
