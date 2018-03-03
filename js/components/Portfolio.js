@@ -244,7 +244,7 @@ var Portfolio = React.createClass({
 
   render() {
     switch (this.state.route) {
-      case '/': $('body').css('background-color', '#FFD10F'); break;
+      case '/': $('body').css('background-color', '#D2BAC8'); break;
       case '/about': $('body').css('background-color', '#fff'); break;
       case '/resume': $('body').css('background-color', '#fff'); break;
     }

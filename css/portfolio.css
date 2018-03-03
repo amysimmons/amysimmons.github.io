@@ -3,9 +3,9 @@
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
-  color: #212121;
+  color: rgb(71, 71, 73);
   font-size: 1em;
-  background-color: #FFD10F;
+  background-color: #D2BAC8;
 }
 
 .content-container{
@@ -24,7 +24,7 @@ header {
   left: 0;
   z-index: 1000;
   position: fixed;
-  background-color: #FFD10F;
+  background-color: #D2BAC8;
 }
 
 nav {
@@ -41,12 +41,12 @@ nav ul {
 }
 
 a {
-  color: #fe6962;
+  color: rgb(68, 122, 160);
   text-decoration: none;
 }
 
 a:hover {
-  color: #FFD10F;
+  color: #85697A;
 }
 
 nav a:hover {
@@ -116,7 +116,7 @@ h3 {
 }
 
 #social-icons a:hover{
-  color: #fe6962;
+  color: #85697A;
 }
 
 .left {
@@ -143,7 +143,7 @@ h3 {
 }
 
 .resume-section {
-  border-top: 6px solid #000;
+  border-top: 6px solid rgb(71, 71, 73);
   padding-top: 1%;
   padding-bottom: 2%;
   box-sizing: border-box;
@@ -192,31 +192,16 @@ h3 {
 
 .resume-info .fa {
   font-size: 1.4em;
-  color: #fe6962;
+  color: rgb(71, 71, 73);
   padding: 0 2% 0 0;
 }
 
 .resume-info a:hover {
-  color: #FFD10F;
-}
-
-.resume-download {
-  margin-top: 10%;
-  text-align: center;
+  color: #85697A;
 }
 
 .technologies {
   font-size: 1em;
-}
-
-.resume-download-link{
-  display: inline-block;
-  border: 3px solid #FFD10F;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  padding: 1em;
-  margin: 1em;
 }
 
 .profile {
@@ -243,10 +228,6 @@ h3 {
 
   .name {
     font-size: 2em;
-  }
-
-  .resume-download-link{
-    font-size: 0.7em;
   }
 
   .profile {
