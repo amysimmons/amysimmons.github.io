@@ -6,7 +6,6 @@ var Header = React.createClass({
           <i className="fa fa-bars hamburger"></i>
           <ul>
             <li className="nav-li"><i className="fa fa-home nav-icon"></i><a href="#/" className="nav-link home-link">home</a></li>
-            <li className="nav-li"><i className="fa fa-laptop nav-icon"></i><a href="#/projects" className="nav-link projects-link">projects</a></li>
             <li className="nav-li"><i className="fa fa-info nav-icon"></i><a href="#/about" className="nav-link about-link">about</a></li>
             <li className="nav-li"><i className="fa fa-file-o nav-icon"></i><a href="#/resume" className="nav-link resume-link">resume</a></li>
           </ul>
@@ -22,195 +21,16 @@ var Home = React.createClass({
 
         <div className="section" id="home">
           <h1 className="name">
-            Hi! I&#39;m <span className="highlight">Amy</span>, a full-stack <span className="highlight">web developer</span> in <span className="strikethrough">Sydney</span> <span className="highlight">London</span>.</h1>
+            Hi! I&#39;m <span className="highlight">Amy</span>, a <span className="highlight">software engineer</span> in <span className="strikethrough">Sydney</span> <span className="highlight">London</span>.</h1>
           <div id="social-icons">
             <a className="fa fa-envelope-o" href="mailto:amysimmons.abc@gmail.com"></a>
             <a className="fa fa-github" href="https://github.com/amysimmons"></a>
             <a className="fa fa-twitter" href="https://twitter.com/amesimmons"></a>
+            <a className="fa fa-medium" href="https://medium.com/@amesimmons/latest"></a>
             <a className="fa fa-linkedin" href="https://au.linkedin.com/in/amesimmons"></a>
           </div>
         </div>
 
-    )
-  }
-});
-
-var Project = React.createClass({
-  render () {
-    var project = this.props.project;
-
-    var links = [];
-
-    if (project.site != ""){
-      links.push(
-        <a href={project.site} className="project-link">View site</a>
-      )
-    }
-    if(project.code != ""){
-      links.push(
-        <a href={project.code} className="project-link">View code</a>
-      )
-    }
-
-    return (
-     <div className="project">
-        <h3>{project.title}</h3>
-        <p className="project-desc">{project.description}</p>
-        <div className="technologies">{project.technologies}</div>
-        {links}
-        <img className={project.classes} src={project.image} alt={project.imageAltText}></img>
-      </div>
-    );
-  },
-});
-
-var Projects = React.createClass({
-  render (){
-    var projectsData = [
-      {
-      title: "Feedr",
-      description: "For 10 weeks in 2016 I was teacher's assistant for a part-time JavaScript Development course with General Assembly. Feedr was one of the projects.",
-      technologies: "ES6",
-      site: "",
-      code: "https://github.com/amysimmons/js1-feedr",
-      image: "project-images/feedr.png",
-      imageAltText: "Feedr",
-      classes: "project-image"
-      },
-
-      {
-      title: "In a Giphy",
-      description: "Over the Easter long weekend in 2016 I travelled to Hong Kong with two girlfriends. On the flight I started building the game Memory. I use the Giphy API as a source for the cards.",
-      technologies: "JavaScript | jQuery |  Node | Express | HTML | CSS",
-      site: "http://amysimmons.github.io/memory/",
-      code: "https://github.com/amysimmons/memory",
-      image: "project-images/memory.png",
-      imageAltText: "Memory card game",
-      classes: "project-image"
-      },
-      {
-      title: "Mosaic generator",
-      description: "In March 2016 I built a mosaic generator. It takes a user uploaded photo and returns a mosaic one row at a time.",
-      technologies: "JavaScript | HTML | CSS",
-      site: "",
-      code: "https://github.com/amysimmons/mosaic",
-      image: "project-images/swift-mosaic.png",
-      imageAltText: "Mosaic image of Taylor Swift",
-      classes: "project-image"
-      },
-      {
-      title: "Unlucky Monkey",
-      description: "I built Unlucky Monkey in January 2016 ahead of Lunar New Year. It allows people around the world to create fortune cookies to be opened by complete strangers.",
-      technologies: "Ruby on Rails | HTML | CSS",
-      site: "https://unlucky-monkey.herokuapp.com/",
-      code: "https://github.com/amysimmons/fortune-cookie",
-      image: "project-images/unlucky-monkey.png",
-      imageAltText: "Unlucky Monkey",
-      classes: "project-image"
-      },
-      {
-      title: "A guide to the care and feeding of new devs",
-      description: "In November 2015 I interviewed junior web developers to find out how they could be better supported in the workplace. This website outlines my findings.",
-      technologies: "React | JavaScript | HTML | CSS",
-      site: "http://amysimmons.github.io/a-guide-to-the-care-and-feeding-of-new-devs/",
-      code: "https://github.com/amysimmons/a-guide-to-the-care-and-feeding-of-new-devs",
-      image: "project-images/new-devs-guide.png",
-      imageAltText: "A guide to the care and feeding of new devs",
-      classes: "project-image"
-    },
-    {
-      title: "JavaScript Study Group: 6 apps in 10 weeks",
-      description: "I organised a 10-week JavaScript Study Group from September 30 to December 2, 2015. In that time I completed six projects, including a React Native Minesweeper app.",
-      technologies: "React | React Native | JavaScript | jQuery | Canvas | HTML | CSS",
-      site: "http://www.meetup.com/Sydney-JavaScript-Study-Group/about/",
-      code: "https://github.com/amysimmons/js-study-group",
-      image: "project-images/minesweeper.png",
-      imageAltText: "JavaScript Study Group: 6 apps in 10 weeks",
-      classes: "iphone"
-    },
-    {
-      title: "Rails Girls Events",
-      description: "I contributed to this app during SheHacks 2015 and in the lead up to the Rails Girls 2015 Winter workshop. It was used to manage applications for the event, which I helped organise and host.",
-      technologies: "Ruby on Rails | JavaScript | jQuery | HTML | CSS",
-      site: "http://rails-girls-events.herokuapp.com/",
-      code: "https://github.com/amysimmons/rails-girls-events",
-      image: "project-images/rails-girls-events.png",
-      imageAltText: "Rails Girls Events",
-      classes: "project-image"
-    },
-    {
-      title: "Playa",
-      description: "My final project for Web Development Immersive. Playa brings democracy to music playlists, allowing guests to add an equal number of songs and vote to skip.",
-      technologies: "Ruby on Rails | JavaScript | jQuery | Backbone | Underscore | Ajax | HTML | CSS",
-      site: "https://playa-app.herokuapp.com",
-      code: "https://github.com/amysimmons/playa_app",
-      image: "project-images/playa.png",
-      imageAltText: "Playa",
-      classes: "project-image"
-    },
-    {
-      title: "Sparkr",
-      description: "My second project for Web Development Immersive. Sparkr is a dating app for mature-aged singles, where connections are formed through moments.",
-      technologies: "Ruby on Rails | JavaScript | jQuery | Ajax | Handlebars | HTML | CSS",
-      site: "http://make-sparks-fly.herokuapp.com/",
-      code: "https://github.com/amysimmons/sparkr_app",
-      image: "project-images/sparkr.png",
-      imageAltText: "Sparkr",
-      classes: "project-image"
-    },
-    {
-      title: "Twitter",
-      description: "My first project for Web Development Immersive. I built a version of Twitter which allows users to quickly and easily separate accredited News tweets from the noise.",
-      technologies: "Ruby on Rails | JavaScript | jQuery | HTML | CSS",
-      site: "http://twitter-news.herokuapp.com/",
-      code: "https://github.com/amysimmons/twitter",
-      image: "project-images/twitter.png",
-      imageAltText: "Twitter",
-      classes: "project-image"
-    },
-    {
-      title: "Why online journalists should learn to code",
-      description: "I interviewed journalists from around the world on why it's important for online journalists to learn to code, and built this website to showcase their reasons.",
-      technologies: "HTML | CSS",
-      site: "http://why-online-journalists-should-learn-to-code.bitballoon.com/",
-      code: "https://github.com/amysimmons/Unicorns",
-      image: "project-images/unicorns.png",
-      imageAltText: "Why online journalists should learn to code",
-      classes: "project-image"
-    },
-    {
-      title: "Faith in Numbers",
-      description: "I built this website in March 2014 as my final project in General Assembly’s Front-End Web Development course. It was my first time using D3.",
-      technologies: "JavaScript | jQuery | D3 | HTML | CSS",
-      site: "http://amysimmons.github.io/faith-in-numbers/",
-      code: "https://github.com/amysimmons/Faith-in-Numbers",
-      image: "project-images/faith-in-numbers.png",
-      imageAltText: "Faith in Numbers",
-      classes: "project-image"
-    },
-    {
-      title: "Promise Tracker",
-      description: "I produced Australia’s first interactive election promise tracker, which was nominated for a Walkley Award for excellence in multimedia journalism.",
-      technologies: "CoreMedia | Keystone.js",
-      site: "http://www.abc.net.au/news/factcheck/promisetracker/",
-      code: "",
-      image: "project-images/promise-tracker.png",
-      imageAltText: "Promise Tracker",
-      classes: "project-image"
-    }
-    ];
-
-    var projects = [];
-    for (var i = 0; i < projectsData.length; i++) {
-      var project = projectsData[i];
-      projects.push(<Project key={i} project={project} />)
-    };
-
-    return (
-      <div>
-        <h2>Projects</h2>
-      {projects}
-      </div>
     )
   }
 });
@@ -228,6 +48,7 @@ var Resume = React.createClass({
                 <a className="fa fa-envelope-o" href="mailto:amysimmons.abc@gmail.com"></a>
                 <a className="fa fa-github" href="https://github.com/amysimmons"></a>
                 <a className="fa fa-twitter" href="https://twitter.com/amesimmons"></a>
+                <a className="fa fa-medium" href="https://medium.com/@amesimmons/latest"></a>
                 <a className="fa fa-linkedin" href="https://au.linkedin.com/in/amesimmons"></a><br/>
               </span>
             </div>
@@ -361,13 +182,13 @@ var Resume = React.createClass({
           <div className="resume-section">
             <h2>skills</h2>
             <div className="resume-item">
-              <span className="resume-info">JavaScript | React | React Native | Node | jQuery | Canvas | Backbone | Underscore | HTML | CSS</span>
+              <span className="resume-info">JavaScript | ES6 | RxJS | React | FlightJS | jQuery | HTML | CSS | Flexbox </span>
             </div>
             <div className="resume-item">
-              <span className="resume-info">Ruby | Rails | C# | .net | VisualStudio | SQL | Git</span>
+              <span className="resume-info">Python | Ruby | Rails | C# | .net | VisualStudio | SQL | Git</span>
             </div>
             <div className="resume-item">
-              <span className="resume-info">Agile practices | Test-driven development | Microservices architecture | OOP</span>
+              <span className="resume-info">Standups | Retros | Planning | Estimation </span>
             </div>
             <div className="resume-item">
               <span className="resume-info">Interviewing | Writing | Producing | Editing</span>
@@ -398,7 +219,7 @@ var About = React.createClass({
           <p>During the course I worked the hardest I’ve ever worked, and I loved every minute of it.</p>
           <p>I graduated in April and received my first full-time developer job, with an amazing company called <a href="https://www.ansarada.com/">ansarada</a>.</p>
           <p>In 2016 I moved to London for a dream job as a software engineer with <a href="https://www.twitter.com/">Twitter</a>.</p>
-          <p>The last couple of years have been the best years of my life, and that&#39;s all because I learnt to code.</p>
+          <p>The last few years have been the best years of my life, and that&#39;s all because I learnt to code.</p>
           <p>You can hear more about my journey from journalism to dev in my <a href="https://itunes.apple.com/gb/podcast/tech-women-australia/id1013578561?mt=2">Tech Women Australia podcast interview</a>, <a href="https://vimeo.com/154932127">CampJS Brisbane talk</a>, <a href="http://www.codenewbie.org/podcast/from-journalist-to-developer">CodeNewbie podcast interview</a>, <a href="http://www.sbs.com.au/news/article/2016/02/29/women-succeeding-increasingly-male-dominated-it-industry">SBS News interview</a> and <a href="https://www.youtube.com/watch?v=ljrvFZCuzN4&app=desktop">SydCSS talk</a>.</p>
         </div>
       </div>
@@ -424,14 +245,12 @@ var Portfolio = React.createClass({
   render() {
     switch (this.state.route) {
       case '/': $('body').css('background-color', '#FFD10F'); break;
-      case '/projects': $('body').css('background-color', '#fff'); break;
       case '/about': $('body').css('background-color', '#fff'); break;
       case '/resume': $('body').css('background-color', '#fff'); break;
     }
 
     let Child
     switch (this.state.route) {
-      case '/projects': Child = Projects; break;
       case '/about': Child = About; break;
       case '/resume': Child = Resume; break;
       default:      Child = Home;

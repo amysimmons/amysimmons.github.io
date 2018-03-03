@@ -96,51 +96,12 @@ h3 {
   font-weight: bold;
 }
 
-.project:not(:last-child) {
-  padding-bottom: 10%;
-  border-bottom: 2px solid lightgrey;
-}
-
-.project {
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-
 .about-content {
   text-align: left;
 }
 
 .about-content, #social-icons {
   margin-top: 5%;
-}
-
-.project-link {
-  padding: 2em 1em 0 0;
-  text-decoration: none;
-  display: inline-block;
-  width: auto;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.project-link:hover {
-   color: #FFD10F;
-}
-
-.project-image {
-  width: 100%;
-  padding: 30px 0;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.iphone {
-  padding: 30px 0;
-  width: 30%;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
 }
 
 #social-icons {
@@ -290,11 +251,6 @@ h3 {
 
   .profile {
     width: 60%;
-  }
-
-  .project-link{
-    font-size: 0.7em;
-    padding: 1em 0em 0em 1em;
   }
 
   .nav-li {
